@@ -69,4 +69,38 @@ describe("Create a new private person", function () {
             expect(response.body.data).to.have.property("fullName").that.equals("Test User")
         });
     });
+
+    it("should return 401 if user is not logged in", () => {
+        cy.request({
+            method: "POST",
+            url: "https://person-api.sandbox.tuumplatform.com/api/v2/persons",
+            headers: {
+                "x-channel-code": "SYSTEM",
+                "x-tenant-code": "MB"
+            },
+            failOnStatusCode: false,
+            body:
+                {
+                    "personTypeCode":"P",
+                    "identificationNumber":{
+                        "primary":true,
+                        "idNumber":"ID-" + getRandomIDNumber(),
+                        "idCountryCode":"EE"
+                    },
+                    "addresses":[
+                        {
+                            "addressTypeCode":"R",
+                            "countryCode":"EE",
+                            "cityCounty":"Tallinn",
+                            "street1":"Address"
+                        }
+                    ],
+                    "givenName":"Test",
+                    "surname":"User"
+                }
+
+        }).then((response) => {
+            expect(response.status).to.equal(401);
+        });
+    })
 });
