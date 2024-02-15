@@ -1,4 +1,4 @@
-const createPerson400status = require('../../fixtures/payloads/createPerson400status.json');
+const createPerson400status = require("../../fixtures/payloads/createPerson400status.json");
 
 const {
     emptyObject,
@@ -117,7 +117,7 @@ describe("Create a new private person", function () {
     });
 
     // status code 200
-    it.skip("should return 200 when creating a person", () => {
+    it("should return 200 when creating a person", () => {
         cy.request({
             method: "POST",
             url: "https://person-api.sandbox.tuumplatform.com/api/v2/persons",
@@ -149,6 +149,17 @@ describe("Create a new private person", function () {
     });
 
     // status code 400
+    it("should return 400 if payload is missing", () => {
+        cy.request({
+            method: "POST",
+            url: "https://person-api.sandbox.tuumplatform.com/api/v2/persons",
+            failOnStatusCode:false,
+            headers: headers
+        }).then((response) => {
+            expect(response.status).to.equal(400);
+        });
+    });
+
     it("should return 400 if payload is empty object", () => {
         cy.request({
             method: "POST",
@@ -599,7 +610,7 @@ describe("Create a new private person", function () {
     });
 
     // status code 401
-    it.skip("should return 401 if user is not logged in", () => {
+    it("should return 401 if user is not logged in", () => {
         cy.request({
             method: "POST",
             url: "https://person-api.sandbox.tuumplatform.com/api/v2/persons",
@@ -608,57 +619,20 @@ describe("Create a new private person", function () {
                 "x-tenant-code": "MB"
             },
             failOnStatusCode: false,
-            body:
-                {
-                    "personTypeCode":"P",
-                    "identificationNumber":{
-                        "primary":true,
-                        "idNumber":"ID-" + getRandomIDNumber(),
-                        "idCountryCode":"EE"
-                    },
-                    "addresses":[
-                        {
-                            "addressTypeCode":"R",
-                            "countryCode":"EE",
-                            "cityCounty":"Tallinn",
-                            "street1":"Address"
-                        }
-                    ],
-                    "givenName":"Test",
-                    "surname":"User"
-                }
-
+            body: personWithIDExists400
         }).then((response) => {
             expect(response.status).to.equal(401);
         });
     });
 
     //status code 404
-    it.skip("should return 404 if URL is wrong", () => {
+    it("should return 404 if URL is wrong", () => {
         cy.request({
             method: "POST",
             url: "https://person-api.sandbox.tuumplatform.com/api/v2/person",
             headers: headers,
             failOnStatusCode: false,
-            body:
-                {
-                    "personTypeCode":"P",
-                    "identificationNumber":{
-                        "primary":true,
-                        "idNumber":"ID-" + getRandomIDNumber(),
-                        "idCountryCode":"EE"
-                    },
-                    "addresses":[
-                        {
-                            "addressTypeCode":"R",
-                            "countryCode":"EE",
-                            "cityCounty":"Tallinn",
-                            "street1":"Address"
-                        }
-                    ],
-                    "givenName":"Test",
-                    "surname":"User"
-                }
+            body: personWithIDExists400
 
         }).then((response) => {
             expect(response.status).to.equal(404);
@@ -666,122 +640,50 @@ describe("Create a new private person", function () {
     });
 
     // status code 405
-    it.skip("should return 405 if PATCH method is used", () => {
+    it("should return 405 if PATCH method is used", () => {
         cy.request({
             method: "PATCH",
             url: "https://person-api.sandbox.tuumplatform.com/api/v2/persons",
             headers: headers,
             failOnStatusCode: false,
-            body:
-                {
-                    "personTypeCode":"P",
-                    "identificationNumber":{
-                        "primary":true,
-                        "idNumber":"ID-" + getRandomIDNumber(),
-                        "idCountryCode":"EE"
-                    },
-                    "addresses":[
-                        {
-                            "addressTypeCode":"R",
-                            "countryCode":"EE",
-                            "cityCounty":"Tallinn",
-                            "street1":"Address"
-                        }
-                    ],
-                    "givenName":"Test",
-                    "surname":"User"
-                }
-
+            body: personWithIDExists400
         }).then((response) => {
             expect(response.status).to.equal(405);
         });
     });
 
-    it.skip("should return 405 if GET method is used", () => {
+    it("should return 405 if GET method is used", () => {
         cy.request({
             method: "GET",
             url: "https://person-api.sandbox.tuumplatform.com/api/v2/persons",
             headers: headers,
             failOnStatusCode: false
-
         }).then((response) => {
             expect(response.status).to.equal(405);
         });
     });
 
-    it.skip("should return 405 if DELETE method is used", () => {
+    it("should return 405 if DELETE method is used", () => {
         cy.request({
             method: "DELETE",
             url: "https://person-api.sandbox.tuumplatform.com/api/v2/persons",
             headers: headers,
             failOnStatusCode: false,
-            body:
-                {
-                    "personTypeCode":"P",
-                    "identificationNumber":{
-                        "primary":true,
-                        "idNumber":"ID-" + getRandomIDNumber(),
-                        "idCountryCode":"EE"
-                    },
-                    "addresses":[
-                        {
-                            "addressTypeCode":"R",
-                            "countryCode":"EE",
-                            "cityCounty":"Tallinn",
-                            "street1":"Address"
-                        }
-                    ],
-                    "givenName":"Test",
-                    "surname":"User"
-                }
-
+            body: personWithIDExists400
         }).then((response) => {
             expect(response.status).to.equal(405);
         });
     });
 
-    it.skip("should return 405 if PUT method is used", () => {
+    it("should return 405 if PUT method is used", () => {
         cy.request({
             method: "PUT",
             url: "https://person-api.sandbox.tuumplatform.com/api/v2/persons",
             headers: headers,
             failOnStatusCode: false,
-            body:
-                {
-                    "personTypeCode":"P",
-                    "identificationNumber":{
-                        "primary":true,
-                        "idNumber":"ID-" + getRandomIDNumber(),
-                        "idCountryCode":"EE"
-                    },
-                    "addresses":[
-                        {
-                            "addressTypeCode":"R",
-                            "countryCode":"EE",
-                            "cityCounty":"Tallinn",
-                            "street1":"Address"
-                        }
-                    ],
-                    "givenName":"Test",
-                    "surname":"User"
-                }
-
+            body: personWithIDExists400
         }).then((response) => {
             expect(response.status).to.equal(405);
         });
     });
-
-    // status code 500 (should have been 400, think)
-    it.skip("should return 500 if payload is missing", () => {
-        cy.request({
-            method: "POST",
-            url: "https://person-api.sandbox.tuumplatform.com/api/v2/persons",
-            failOnStatusCode:false,
-            headers: headers
-        }).then((response) => {
-            expect(response.status).to.equal(500);
-        });
-    });
-
-
 });
