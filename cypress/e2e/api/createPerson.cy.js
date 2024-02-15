@@ -102,5 +102,110 @@ describe("Create a new private person", function () {
         }).then((response) => {
             expect(response.status).to.equal(401);
         });
-    })
+    });
+
+    it("should return 405 if PATCH method is used", () => {
+        cy.request({
+            method: "PATCH",
+            url: "https://person-api.sandbox.tuumplatform.com/api/v2/persons",
+            headers: headers,
+            failOnStatusCode: false,
+            body:
+                {
+                    "personTypeCode":"P",
+                    "identificationNumber":{
+                        "primary":true,
+                        "idNumber":"ID-" + getRandomIDNumber(),
+                        "idCountryCode":"EE"
+                    },
+                    "addresses":[
+                        {
+                            "addressTypeCode":"R",
+                            "countryCode":"EE",
+                            "cityCounty":"Tallinn",
+                            "street1":"Address"
+                        }
+                    ],
+                    "givenName":"Test",
+                    "surname":"User"
+                }
+
+        }).then((response) => {
+            expect(response.status).to.equal(405);
+        });
+    });
+
+    it("should return 405 if GET method is used", () => {
+        cy.request({
+            method: "GET",
+            url: "https://person-api.sandbox.tuumplatform.com/api/v2/persons",
+            headers: headers,
+            failOnStatusCode: false
+
+        }).then((response) => {
+            expect(response.status).to.equal(405);
+        });
+    });
+
+    it("should return 405 if DELETE method is used", () => {
+        cy.request({
+            method: "DELETE",
+            url: "https://person-api.sandbox.tuumplatform.com/api/v2/persons",
+            headers: headers,
+            failOnStatusCode: false,
+            body:
+                {
+                    "personTypeCode":"P",
+                    "identificationNumber":{
+                        "primary":true,
+                        "idNumber":"ID-" + getRandomIDNumber(),
+                        "idCountryCode":"EE"
+                    },
+                    "addresses":[
+                        {
+                            "addressTypeCode":"R",
+                            "countryCode":"EE",
+                            "cityCounty":"Tallinn",
+                            "street1":"Address"
+                        }
+                    ],
+                    "givenName":"Test",
+                    "surname":"User"
+                }
+
+        }).then((response) => {
+            expect(response.status).to.equal(405);
+        });
+    });
+
+    it("should return 405 if PUT method is used", () => {
+        cy.request({
+            method: "PUT",
+            url: "https://person-api.sandbox.tuumplatform.com/api/v2/persons",
+            headers: headers,
+            failOnStatusCode: false,
+            body:
+                {
+                    "personTypeCode":"P",
+                    "identificationNumber":{
+                        "primary":true,
+                        "idNumber":"ID-" + getRandomIDNumber(),
+                        "idCountryCode":"EE"
+                    },
+                    "addresses":[
+                        {
+                            "addressTypeCode":"R",
+                            "countryCode":"EE",
+                            "cityCounty":"Tallinn",
+                            "street1":"Address"
+                        }
+                    ],
+                    "givenName":"Test",
+                    "surname":"User"
+                }
+
+        }).then((response) => {
+            expect(response.status).to.equal(405);
+        });
+    });
 });
