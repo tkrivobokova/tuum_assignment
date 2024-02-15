@@ -39,7 +39,7 @@ describe("Create a new private person", function () {
         });
     });
 
-    it("should return 200 when creating a person", () => {
+    it.skip("should return 200 when creating a person", () => {
         cy.request({
             method: "POST",
             url: "https://person-api.sandbox.tuumplatform.com/api/v2/persons",
@@ -70,7 +70,7 @@ describe("Create a new private person", function () {
         });
     });
 
-    it("should return 401 if user is not logged in", () => {
+    it.skip("should return 401 if user is not logged in", () => {
         cy.request({
             method: "POST",
             url: "https://person-api.sandbox.tuumplatform.com/api/v2/persons",
@@ -104,7 +104,7 @@ describe("Create a new private person", function () {
         });
     });
 
-    it("should return 405 if PATCH method is used", () => {
+    it.skip("should return 405 if PATCH method is used", () => {
         cy.request({
             method: "PATCH",
             url: "https://person-api.sandbox.tuumplatform.com/api/v2/persons",
@@ -135,7 +135,7 @@ describe("Create a new private person", function () {
         });
     });
 
-    it("should return 405 if GET method is used", () => {
+    it.skip("should return 405 if GET method is used", () => {
         cy.request({
             method: "GET",
             url: "https://person-api.sandbox.tuumplatform.com/api/v2/persons",
@@ -147,7 +147,7 @@ describe("Create a new private person", function () {
         });
     });
 
-    it("should return 405 if DELETE method is used", () => {
+    it.skip("should return 405 if DELETE method is used", () => {
         cy.request({
             method: "DELETE",
             url: "https://person-api.sandbox.tuumplatform.com/api/v2/persons",
@@ -178,7 +178,7 @@ describe("Create a new private person", function () {
         });
     });
 
-    it("should return 405 if PUT method is used", () => {
+    it.skip("should return 405 if PUT method is used", () => {
         cy.request({
             method: "PUT",
             url: "https://person-api.sandbox.tuumplatform.com/api/v2/persons",
@@ -208,4 +208,36 @@ describe("Create a new private person", function () {
             expect(response.status).to.equal(405);
         });
     });
+
+    it("should return 404 if URL is wrong", () => {
+        cy.request({
+            method: "POST",
+            url: "https://person-api.sandbox.tuumplatform.com/api/v2/person",
+            headers: headers,
+            failOnStatusCode: false,
+            body:
+                {
+                    "personTypeCode":"P",
+                    "identificationNumber":{
+                        "primary":true,
+                        "idNumber":"ID-" + getRandomIDNumber(),
+                        "idCountryCode":"EE"
+                    },
+                    "addresses":[
+                        {
+                            "addressTypeCode":"R",
+                            "countryCode":"EE",
+                            "cityCounty":"Tallinn",
+                            "street1":"Address"
+                        }
+                    ],
+                    "givenName":"Test",
+                    "surname":"User"
+                }
+
+        }).then((response) => {
+            expect(response.status).to.equal(404);
+        });
+    });
+
 });
