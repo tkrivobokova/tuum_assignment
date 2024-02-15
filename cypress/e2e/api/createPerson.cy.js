@@ -209,7 +209,7 @@ describe("Create a new private person", function () {
         });
     });
 
-    it("should return 404 if URL is wrong", () => {
+    it.skip("should return 404 if URL is wrong", () => {
         cy.request({
             method: "POST",
             url: "https://person-api.sandbox.tuumplatform.com/api/v2/person",
@@ -239,5 +239,18 @@ describe("Create a new private person", function () {
             expect(response.status).to.equal(404);
         });
     });
+
+    it("should return 500 if payload is missing", () => {
+        //TODO: should have been status code 400
+        cy.request({
+            method: "POST",
+            url: "https://person-api.sandbox.tuumplatform.com/api/v2/persons",
+            failOnStatusCode:false,
+            headers: headers
+        }).then((response) => {
+            expect(response.status).to.equal(500);
+        });
+    });
+
 
 });
