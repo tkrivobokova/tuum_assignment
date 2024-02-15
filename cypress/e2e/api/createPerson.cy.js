@@ -144,6 +144,11 @@ describe("Create a new private person", function () {
 
         }).then((response) => {
             expect(response.status).to.equal(200);
+            expect(response.body).to.have.property("data");
+            expect(response.body).to.have.property("errors").that.equal(null);
+            expect(response.body).to.have.property("validationErrors").that.equal(null);
+            expect(response.body.data).to.have.property("statusCode").that.equal("ACTIVE");
+            expect(response.body.data.personId).not.null;
             expect(response.body.data).to.have.property("fullName").that.equals("Test User")
         });
     });
@@ -157,6 +162,8 @@ describe("Create a new private person", function () {
             headers: headers
         }).then((response) => {
             expect(response.status).to.equal(400);
+            expect(response.body).to.have.property("errors");
+            expect(response.body).to.have.property("validationErrors");
         });
     });
 
@@ -169,6 +176,8 @@ describe("Create a new private person", function () {
             body: emptyObject400
         }).then((response) => {
             expect(response.status).to.equal(400);
+            expect(response.body).to.have.property("errors");
+            expect(response.body).to.have.property("validationErrors");
         });
     });
 
@@ -182,6 +191,8 @@ describe("Create a new private person", function () {
         }).then((response) => {
             expect(response.status).to.equal(400);
             expect(response.body.errors).to.include("err.idNumberExists");
+            expect(response.body).to.have.property("errors");
+            expect(response.body).to.have.property("validationErrors");
         });
     });
 
@@ -194,6 +205,9 @@ describe("Create a new private person", function () {
             body: personTypeCodeMissing400
         }).then((response) => {
             expect(response.status).to.equal(400);
+            expect(response.body.errors).to.include("err.personTypeCodeMissing");
+            expect(response.body).to.have.property("errors");
+            expect(response.body).to.have.property("validationErrors");
         });
     });
 
@@ -206,6 +220,9 @@ describe("Create a new private person", function () {
             body: personTypeCodeEmpty400
         }).then((response) => {
             expect(response.status).to.equal(400);
+            expect(response.body.errors).to.include("err.personTypeCodeMissing");
+            expect(response.body).to.have.property("errors");
+            expect(response.body).to.have.property("validationErrors");
         });
     });
 
@@ -218,6 +235,9 @@ describe("Create a new private person", function () {
             body: personTypeCodeSpace400
         }).then((response) => {
             expect(response.status).to.equal(400);
+            expect(response.body.errors).to.include("err.personTypeCodeMissing");
+            expect(response.body).to.have.property("errors");
+            expect(response.body).to.have.property("validationErrors");
         });
     });
 
@@ -231,6 +251,8 @@ describe("Create a new private person", function () {
         }).then((response) => {
             expect(response.status).to.equal(400);
             expect(response.body.errors).to.include("err.idNumberOnePrimaryRequired");
+            expect(response.body).to.have.property("errors");
+            expect(response.body).to.have.property("validationErrors");
         });
     });
 
@@ -243,6 +265,8 @@ describe("Create a new private person", function () {
             body: identificationNumberEmpty400
         }).then((response) => {
             expect(response.status).to.equal(400);
+            expect(response.body).to.have.property("errors");
+            expect(response.body).to.have.property("validationErrors");
         });
     });
 
@@ -256,6 +280,8 @@ describe("Create a new private person", function () {
         }).then((response) => {
             expect(response.status).to.equal(400);
             expect(response.body.errors).to.include("err.idNumberMissing");
+            expect(response.body).to.have.property("errors");
+            expect(response.body).to.have.property("validationErrors");
         });
     });
 
@@ -269,6 +295,8 @@ describe("Create a new private person", function () {
         }).then((response) => {
             expect(response.status).to.equal(400);
             expect(response.body.errors).to.include("err.idNumberMissing");
+            expect(response.body).to.have.property("errors");
+            expect(response.body).to.have.property("validationErrors");
         });
     });
 
@@ -282,6 +310,8 @@ describe("Create a new private person", function () {
         }).then((response) => {
             expect(response.status).to.equal(400);
             expect(response.body.errors).to.include("err.idNumberMissing");
+            expect(response.body).to.have.property("errors");
+            expect(response.body).to.have.property("validationErrors");
         });
     });
 
@@ -295,6 +325,8 @@ describe("Create a new private person", function () {
         }).then((response) => {
             expect(response.status).to.equal(400);
             expect(response.body.errors).to.include("err.idNumberCountryMissing");
+            expect(response.body).to.have.property("errors");
+            expect(response.body).to.have.property("validationErrors");
         });
     });
 
@@ -308,6 +340,8 @@ describe("Create a new private person", function () {
         }).then((response) => {
             expect(response.status).to.equal(400);
             expect(response.body.errors).to.include("err.idNumberCountryMissing");
+            expect(response.body).to.have.property("errors");
+            expect(response.body).to.have.property("validationErrors");
         });
     });
 
@@ -321,6 +355,8 @@ describe("Create a new private person", function () {
         }).then((response) => {
             expect(response.status).to.equal(400);
             expect(response.body.errors).to.include("err.idNumberCountryInvalid");
+            expect(response.body).to.have.property("errors");
+            expect(response.body).to.have.property("validationErrors");
         });
     });
 
@@ -334,6 +370,8 @@ describe("Create a new private person", function () {
         }).then((response) => {
             expect(response.status).to.equal(400);
             expect(response.body.errors).to.include("err.idNumberCountryMissing");
+            expect(response.body).to.have.property("errors");
+            expect(response.body).to.have.property("validationErrors");
         });
     });
 
@@ -347,6 +385,8 @@ describe("Create a new private person", function () {
         }).then((response) => {
             expect(response.status).to.equal(400);
             expect(response.body.errors).to.include("err.addressesMissing");
+            expect(response.body).to.have.property("errors");
+            expect(response.body).to.have.property("validationErrors");
         });
     });
 
@@ -359,6 +399,8 @@ describe("Create a new private person", function () {
             body: addressesEmpty400
         }).then((response) => {
             expect(response.status).to.equal(400);
+            expect(response.body).to.have.property("errors");
+            expect(response.body).to.have.property("validationErrors");
         });
     });
 
@@ -372,6 +414,8 @@ describe("Create a new private person", function () {
         }).then((response) => {
             expect(response.status).to.equal(400);
             expect(response.body.errors).to.include("err.addressRegistrationAtLeastOneRequired");
+            expect(response.body).to.have.property("errors");
+            expect(response.body).to.have.property("validationErrors");
         });
     });
 
@@ -385,6 +429,8 @@ describe("Create a new private person", function () {
         }).then((response) => {
             expect(response.status).to.equal(400);
             expect(response.body.errors).to.include("err.addressRegistrationAtLeastOneRequired");
+            expect(response.body).to.have.property("errors");
+            expect(response.body).to.have.property("validationErrors");
         });
     });
 
@@ -398,6 +444,8 @@ describe("Create a new private person", function () {
         }).then((response) => {
             expect(response.status).to.equal(400);
             expect(response.body.errors).to.include("err.addressRegistrationAtLeastOneRequired");
+            expect(response.body).to.have.property("errors");
+            expect(response.body).to.have.property("validationErrors");
         });
     });
 
@@ -411,6 +459,8 @@ describe("Create a new private person", function () {
         }).then((response) => {
             expect(response.status).to.equal(400);
             expect(response.body.errors).to.include("err.addressCountryMissing");
+            expect(response.body).to.have.property("errors");
+            expect(response.body).to.have.property("validationErrors");
         });
     });
 
@@ -424,6 +474,8 @@ describe("Create a new private person", function () {
         }).then((response) => {
             expect(response.status).to.equal(400);
             expect(response.body.errors).to.include("err.addressCountryMissing");
+            expect(response.body).to.have.property("errors");
+            expect(response.body).to.have.property("validationErrors");
         });
     });
 
@@ -437,6 +489,8 @@ describe("Create a new private person", function () {
         }).then((response) => {
             expect(response.status).to.equal(400);
             expect(response.body.errors).to.include("err.addressCountryInvalid");
+            expect(response.body).to.have.property("errors");
+            expect(response.body).to.have.property("validationErrors");
         });
     });
 
@@ -450,6 +504,8 @@ describe("Create a new private person", function () {
         }).then((response) => {
             expect(response.status).to.equal(400);
             expect(response.body.errors).to.include("err.addressCountryMissing");
+            expect(response.body).to.have.property("errors");
+            expect(response.body).to.have.property("validationErrors");
         });
     });
 
@@ -463,6 +519,8 @@ describe("Create a new private person", function () {
         }).then((response) => {
             expect(response.status).to.equal(400);
             expect(response.body.errors).to.include("err.addressCityCountyMissing");
+            expect(response.body).to.have.property("errors");
+            expect(response.body).to.have.property("validationErrors");
         });
     });
 
@@ -476,6 +534,8 @@ describe("Create a new private person", function () {
         }).then((response) => {
             expect(response.status).to.equal(400);
             expect(response.body.errors).to.include("err.addressCityCountyMissing");
+            expect(response.body).to.have.property("errors");
+            expect(response.body).to.have.property("validationErrors");
         });
     });
 
@@ -489,6 +549,8 @@ describe("Create a new private person", function () {
         }).then((response) => {
             expect(response.status).to.equal(400);
             expect(response.body.errors).to.include("err.addressCityCountyMissing");
+            expect(response.body).to.have.property("errors");
+            expect(response.body).to.have.property("validationErrors");
         });
     });
 
@@ -502,6 +564,8 @@ describe("Create a new private person", function () {
         }).then((response) => {
             expect(response.status).to.equal(400);
             expect(response.body.errors).to.include("err.addressStreet1Missing");
+            expect(response.body).to.have.property("errors");
+            expect(response.body).to.have.property("validationErrors");
         });
     });
 
@@ -515,6 +579,8 @@ describe("Create a new private person", function () {
         }).then((response) => {
             expect(response.status).to.equal(400);
             expect(response.body.errors).to.include("err.addressStreet1Missing");
+            expect(response.body).to.have.property("errors");
+            expect(response.body).to.have.property("validationErrors");
         });
     });
 
@@ -528,6 +594,8 @@ describe("Create a new private person", function () {
         }).then((response) => {
             expect(response.status).to.equal(400);
             expect(response.body.errors).to.include("err.addressStreet1Missing");
+            expect(response.body).to.have.property("errors");
+            expect(response.body).to.have.property("validationErrors");
         });
     });
 
@@ -541,6 +609,8 @@ describe("Create a new private person", function () {
         }).then((response) => {
             expect(response.status).to.equal(400);
             expect(response.body.errors).to.include("err.personGivenNameMissing");
+            expect(response.body).to.have.property("errors");
+            expect(response.body).to.have.property("validationErrors");
         });
     });
 
@@ -554,6 +624,8 @@ describe("Create a new private person", function () {
         }).then((response) => {
             expect(response.status).to.equal(400);
             expect(response.body.errors).to.include("err.personGivenNameMissing");
+            expect(response.body).to.have.property("errors");
+            expect(response.body).to.have.property("validationErrors");
         });
     });
 
@@ -567,6 +639,8 @@ describe("Create a new private person", function () {
         }).then((response) => {
             expect(response.status).to.equal(400);
             expect(response.body.errors).to.include("err.personGivenNameMissing");
+            expect(response.body).to.have.property("errors");
+            expect(response.body).to.have.property("validationErrors");
         });
     });
 
@@ -580,6 +654,8 @@ describe("Create a new private person", function () {
         }).then((response) => {
             expect(response.status).to.equal(400);
             expect(response.body.errors).to.include("err.personSurnameMissing");
+            expect(response.body).to.have.property("errors");
+            expect(response.body).to.have.property("validationErrors");
         });
     });
 
@@ -593,6 +669,8 @@ describe("Create a new private person", function () {
         }).then((response) => {
             expect(response.status).to.equal(400);
             expect(response.body.errors).to.include("err.personSurnameMissing");
+            expect(response.body).to.have.property("errors");
+            expect(response.body).to.have.property("validationErrors");
         });
     });
 
@@ -606,6 +684,8 @@ describe("Create a new private person", function () {
         }).then((response) => {
             expect(response.status).to.equal(400);
             expect(response.body.errors).to.include("err.personSurnameMissing");
+            expect(response.body).to.have.property("errors");
+            expect(response.body).to.have.property("validationErrors");
         });
     });
 
@@ -636,6 +716,8 @@ describe("Create a new private person", function () {
 
         }).then((response) => {
             expect(response.status).to.equal(404);
+            expect(response.body).to.have.property("error").that.equal("Not Found");
+            expect(response.body).to.have.property("path").that.equal("/api/v2/person");
         });
     });
 
@@ -649,6 +731,8 @@ describe("Create a new private person", function () {
             body: personWithIDExists400
         }).then((response) => {
             expect(response.status).to.equal(405);
+            expect(response.body).to.have.property("errors");
+            expect(response.body).to.have.property("validationErrors");
         });
     });
 
@@ -660,6 +744,8 @@ describe("Create a new private person", function () {
             failOnStatusCode: false
         }).then((response) => {
             expect(response.status).to.equal(405);
+            expect(response.body).to.have.property("errors");
+            expect(response.body).to.have.property("validationErrors");
         });
     });
 
@@ -672,6 +758,8 @@ describe("Create a new private person", function () {
             body: personWithIDExists400
         }).then((response) => {
             expect(response.status).to.equal(405);
+            expect(response.body).to.have.property("errors");
+            expect(response.body).to.have.property("validationErrors");
         });
     });
 
@@ -684,6 +772,8 @@ describe("Create a new private person", function () {
             body: personWithIDExists400
         }).then((response) => {
             expect(response.status).to.equal(405);
+            expect(response.body).to.have.property("errors");
+            expect(response.body).to.have.property("validationErrors");
         });
     });
 });
