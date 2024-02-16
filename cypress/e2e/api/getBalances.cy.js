@@ -88,11 +88,63 @@ describe("Create a new account", () => {
             url: "https://account-api.sandbox.tuumplatform.com/api/v1/accounts/" + accountId + "/balance",
             headers: headers,
             failOnStatusCode: false
-
         }).then((response) => {
             expect(response.status).to.equal(404);
             expect(response.body).to.have.property("error").that.equal("Not Found");
             expect(response.body).to.have.property("path").that.equal("/api/v1/accounts/" + accountId + "/balance");
+        });
+    });
+
+    // status code 405
+    it("should return 405 if PATCH method is used", () => {
+        cy.request({
+            method: "PATCH",
+            url: "https://account-api.sandbox.tuumplatform.com/api/v1/accounts/" + accountId + "/balances",
+            headers: headers,
+            failOnStatusCode: false
+        }).then((response) => {
+            expect(response.status).to.equal(405);
+            expect(response.body).to.have.property("errors");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
+
+    it("should return 405 if POST method is used", () => {
+        cy.request({
+            method: "POST",
+            url: "https://account-api.sandbox.tuumplatform.com/api/v1/accounts/" + accountId + "/balances",
+            headers: headers,
+            failOnStatusCode: false
+        }).then((response) => {
+            expect(response.status).to.equal(405);
+            expect(response.body).to.have.property("errors");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
+
+    it("should return 405 if DELETE method is used", () => {
+        cy.request({
+            method: "DELETE",
+            url: "https://account-api.sandbox.tuumplatform.com/api/v1/accounts/" + accountId + "/balances",
+            headers: headers,
+            failOnStatusCode: false
+        }).then((response) => {
+            expect(response.status).to.equal(405);
+            expect(response.body).to.have.property("errors");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
+
+    it("should return 405 if PUT method is used", () => {
+        cy.request({
+            method: "PUT",
+            url: "https://account-api.sandbox.tuumplatform.com/api/v1/accounts/" + accountId + "/balances",
+            headers: headers,
+            failOnStatusCode: false
+        }).then((response) => {
+            expect(response.status).to.equal(405);
+            expect(response.body).to.have.property("errors");
+            expect(response.body).to.have.property("validationErrors");
         });
     });
 })
