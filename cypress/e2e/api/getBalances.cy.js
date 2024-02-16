@@ -64,4 +64,19 @@ describe("Create a new account", () => {
         });
     });
 
+
+    // status code 401
+    it("should return 401 if user is not logged in", () => {
+        cy.request({
+            method: "GET",
+            url: "https://account-api.sandbox.tuumplatform.com/api/v1/accounts/" + accountId + "/balances",
+            headers: {
+                "x-channel-code": "SYSTEM",
+                "x-tenant-code": "MB"
+            },
+            failOnStatusCode: false
+        }).then((response) => {
+            expect(response.status).to.equal(401);
+        });
+    });
 })
