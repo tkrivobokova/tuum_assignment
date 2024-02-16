@@ -1,8 +1,9 @@
-let jwtToken;
-let headers;
 const accountId  = "ID-2000";
 const currencyUSD = "USD";
-const currencyEUR = "EUR";
+const currencyInvalid = "PEW";
+
+let jwtToken;
+let headers;
 
 describe("Create a new account", () => {
     // login
@@ -65,6 +66,18 @@ describe("Create a new account", () => {
     });
 
     // status code 400
+    it("should return 400 if currencyCode is not supported", () => {
+        cy.request({
+            method: "GET",
+            url: "https://account-api.sandbox.tuumplatform.com/api/v1/accounts/" + accountId + "/balances?currencyCode=" + currencyInvalid,
+            headers: headers
+
+        }).then((response) => {
+            expect(response.status).to.equal(400);
+            expect(response.body).to.have.property("errors").to.include("err.currencyCodeNotSupported");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
 
     // status code 401
     it("should return 401 if user is not logged in", () => {
