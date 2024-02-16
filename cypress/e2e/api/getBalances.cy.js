@@ -64,6 +64,7 @@ describe("Create a new account", () => {
         });
     });
 
+    // status code 400
 
     // status code 401
     it("should return 401 if user is not logged in", () => {
@@ -77,6 +78,21 @@ describe("Create a new account", () => {
             failOnStatusCode: false
         }).then((response) => {
             expect(response.status).to.equal(401);
+        });
+    });
+
+    //status code 404
+    it("should return 404 if URL is wrong", () => {
+        cy.request({
+            method: "GET",
+            url: "https://account-api.sandbox.tuumplatform.com/api/v1/accounts/" + accountId + "/balance",
+            headers: headers,
+            failOnStatusCode: false
+
+        }).then((response) => {
+            expect(response.status).to.equal(404);
+            expect(response.body).to.have.property("error").that.equal("Not Found");
+            expect(response.body).to.have.property("path").that.equal("/api/v1/accounts/" + accountId + "/balance");
         });
     });
 })
