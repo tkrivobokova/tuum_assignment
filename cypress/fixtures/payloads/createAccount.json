@@ -1,0 +1,5770 @@
+{
+  "validPayload": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "emptyObject": {},
+  "accountTypeCodeMissing": {
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "accountTypeCodeEmpty": {
+    "accountTypeCode": "",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "accountTypeCodeSpace": {
+    "accountTypeCode": " ",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "accountTypeCodeNull": {
+    "accountTypeCode": null,
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "overdraftAmountMissing": {
+    "accountTypeCode": "CURRENCY",
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "overdraftAmountEmpty": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "overdraftAmount.amountMissing": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "overdraftAmount.amountEmpty": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": "",
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "overdraftAmount.amountSpace": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": " ",
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "overdraftAmount.amountNull": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": null,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "overdraftAmount.currencyCodeMissing": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "overdraftAmount.currencyCodeEmpty": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": ""
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "overdraftAmount.currencyCodeSpace": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": " "
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "overdraftAmount.currencyCodeNull": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": null
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "overdraftAmount.currencyCodeInvalid": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "PEW"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "personNameMissing": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "personNameEmpty": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "personNameSpace": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": " ",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "personNameNull": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": null,
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "sourceMissing": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "sourceEmpty": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {},
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "source.sourceNameMissing": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "source.sourceNameEmpty": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "source.sourceNameSpace": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": " ",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "source.sourceNameNull": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": null,
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "source.sourceRefMissing": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "source.sourceRefEmpty": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": ""
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "source.sourceRefSpace": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": " "
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "source.sourceRefNull": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": null
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "residencyCountryCodeMissing": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "residencyCountryCodeEmpty": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "residencyCountryCodeSpace": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": " ",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "residencyCountryCodeNull": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": null,
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "residencyCountryCodeInvalid": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "PEW",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "currencyCodeMissing": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "currencyCodeEmpty": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "currencyCodeSpace": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": " ",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "currencyCodeNull": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": null,
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "currencyCodeInvalid": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "PEW",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "representativesMissing": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "representativesEmpty": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "representatives.personIdMissing": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "representatives.personIdEmpty": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "representatives.personIdSpace": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": " ",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "representatives.personIdNull": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": null,
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "representatives.accountRightCodeMissing": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "representatives.accountRightCodeEmpty": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "representatives.accountRightCodeSpace": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": " ",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "representatives.accountRightCodeNull": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": null,
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "representatives.accountRightCodeInvalid": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "PEW",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "representatives.limitsMissing": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL"
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "representatives.limitsEmpty": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": []
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "representatives.limits.amountMissing": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "representatives.limits.amountEmpty": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {},
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "representatives.limits.amount.amountMissing": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "representatives.limits.amount.amountEmpty": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": "",
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "representatives.limits.amount.amountSpace": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": " ",
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "representatives.limits.amount.amountNull": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": null,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "representatives.limits.amount.currencyCodeMissing": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "representatives.limits.amount.currencyCodeEmpty": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": ""
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "representatives.limits.amount.currencyCodeSpace": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": " "
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "representatives.limits.amount.currencyCodeNull": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": null
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "representatives.limits.amount.currencyCodeInvalid": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "PEW"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "representatives.limits.accountLimitTypeCodeMissing": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            }
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "representatives.limits.accountLimitTypeCodeEmpty": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": ""
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "representatives.limits.accountLimitTypeCodeSpace": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": " "
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "representatives.limits.accountLimitTypeCodeNull": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": null
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "representatives.limits.accountLimitTypeCodeInvalid": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "PEW"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "accountNumbersMissing": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "accountNumbersEmpty": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "accountNumbers.accountNumberMissing": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "accountNumbers.accountNumberEmpty": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {},
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "accountNumbers.accountNumber.typeMissing": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "accountNumbers.accountNumber.typeEmpty": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "accountNumbers.accountNumber.typeSpace": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": " ",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "accountNumbers.accountNumber.typeNull": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": null,
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "accountNumbers.accountNumber.typeInvalid": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "PEW",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "accountNumbers.accountNumber.valueMissing": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "accountNumbers.accountNumber.valueEmpty": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": ""
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "accountNumbers.accountNumber.valueSpace": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": " "
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "accountNumbers.accountNumber.valueNull": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": null
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "accountNumbers.countryCodeMissing": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "accountNumbers.countryCodeEmpty": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "accountNumbers.countryCodeSpace": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": " ",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "accountNumbers.countryCodeNull": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": null,
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "accountNumbers.countryCodeInvalid": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "PEW",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "accountNumbers.financialInstitutionIdMissing": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE"
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "accountNumbers.financialInstitutionIdEmpty": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {}
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "accountNumbers.financialInstitutionId.typeMissing": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "accountNumbers.financialInstitutionId.typeEmpty": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "accountNumbers.financialInstitutionId.typeSpace": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": " ",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "accountNumbers.financialInstitutionId.typeNull": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": null,
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "accountNumbers.financialInstitutionId.typeInvalid": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "PEW",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "accountNumbers.financialInstitutionId.valueMissing": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "accountNumbers.financialInstitutionId.valueEmpty": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": ""
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "accountNumbers.financialInstitutionId.valueSpace": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": " "
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "accountNumbers.financialInstitutionId.valueNull": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": null
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "limitsMissing": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ]
+  },
+  "limitsEmpty": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": []
+  },
+  "limits.amountMissing": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "limits.amountEmpty": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {},
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "limits.amount.amountMissing": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "limits.amount.amountEmpty": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": "",
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "limits.amount.amountSpace": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": " ",
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "limits.amount.amountNull": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": null,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "limits.amount.currencyCodeMissing": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "limits.amount.currencyCodeEmpty": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": ""
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "limits.amount.currencyCodeSpace": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": " "
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "limits.amount.currencyCodeNull": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": null
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "limits.amount.currencyCodeInvalid": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "PEW"
+        },
+        "accountLimitTypeCode": "DAILY"
+      }
+    ]
+  },
+  "limits.accountLimitTypeCodeMissing": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        }
+      }
+    ]
+  },
+  "limits.accountLimitTypeCodeEmpty": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": ""
+      }
+    ]
+  },
+  "limits.accountLimitTypeCodeSpace": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": " "
+      }
+    ]
+  },
+  "limits.accountLimitTypeCodeNull": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": null
+      }
+    ]
+  },
+  "limits.accountLimitTypeCodeInvalid": {
+    "accountTypeCode": "CURRENCY",
+    "overdraftAmount": {
+      "amount": 0.00,
+      "currencyCode": "EUR"
+    },
+    "personName": "Peter Alexander Schmidt",
+    "source": {
+      "sourceName": "string",
+      "sourceRef": "string"
+    },
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR",
+    "representatives": [
+      {
+        "personId": "ID-2001",
+        "accountRightCode": "ALL",
+        "limits": [
+          {
+            "amount": {
+              "amount": 100.00,
+              "currencyCode": "EUR"
+            },
+            "accountLimitTypeCode": "DAILY"
+          }
+        ]
+      }
+    ],
+    "accountNumbers": [
+      {
+        "accountNumber": {
+          "type": "IBAN",
+          "value": "EE711266266878335196"
+        },
+        "countryCode": "EE",
+        "financialInstitutionId": {
+          "type": "BIC",
+          "value": "123456"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "amount": {
+          "amount": 100,
+          "currencyCode": "EUR"
+        },
+        "accountLimitTypeCode": "PEW"
+      }
+    ]
+  }
+}
