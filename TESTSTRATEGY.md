@@ -10,6 +10,8 @@ The scope is to ensure that the behavior of endpoints:
 respond to the expected conditions. This includes:
 * Validating the correctness of data sent and received
 * Non authorized user cannot access data
+* Request can be successfully sent only if correct HTTP method is used
+* Correct error code is returned if error occurs
 
 ### Testing Approach:
 Testing will involve manual and automated testing techniques. For manual testing the exploratory testing will be used. 
