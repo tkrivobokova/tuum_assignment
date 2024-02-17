@@ -350,7 +350,7 @@
       }
     ]
   },
-  "overdraftAmount.amountMissing": {
+  "overdraftAmount_amountMissing": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "currencyCode": "EUR"
@@ -400,7 +400,7 @@
       }
     ]
   },
-  "overdraftAmount.amountEmpty": {
+  "overdraftAmount_amountEmpty": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": "",
@@ -451,7 +451,7 @@
       }
     ]
   },
-  "overdraftAmount.amountSpace": {
+  "overdraftAmount_amountSpace": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": " ",
@@ -502,7 +502,7 @@
       }
     ]
   },
-  "overdraftAmount.amountNull": {
+  "overdraftAmount_amountNull": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": null,
@@ -553,7 +553,7 @@
       }
     ]
   },
-  "overdraftAmount.currencyCodeMissing": {
+  "overdraftAmount_currencyCodeMissing": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00
@@ -603,7 +603,7 @@
       }
     ]
   },
-  "overdraftAmount.currencyCodeEmpty": {
+  "overdraftAmount_currencyCodeEmpty": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -654,7 +654,7 @@
       }
     ]
   },
-  "overdraftAmount.currencyCodeSpace": {
+  "overdraftAmount_currencyCodeSpace": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -705,7 +705,7 @@
       }
     ]
   },
-  "overdraftAmount.currencyCodeNull": {
+  "overdraftAmount_currencyCodeNull": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -756,7 +756,7 @@
       }
     ]
   },
-  "overdraftAmount.currencyCodeInvalid": {
+  "overdraftAmount_currencyCodeInvalid": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -1105,7 +1105,7 @@
       }
     ]
   },
-  "source.sourceNameMissing": {
+  "source_sourceNameMissing": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -1155,7 +1155,7 @@
       }
     ]
   },
-  "source.sourceNameEmpty": {
+  "source_sourceNameEmpty": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -1206,7 +1206,7 @@
       }
     ]
   },
-  "source.sourceNameSpace": {
+  "source_sourceNameSpace": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -1257,7 +1257,7 @@
       }
     ]
   },
-  "source.sourceNameNull": {
+  "source_sourceNameNull": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -1308,7 +1308,7 @@
       }
     ]
   },
-  "source.sourceRefMissing": {
+  "source_sourceRefMissing": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -1358,7 +1358,7 @@
       }
     ]
   },
-  "source.sourceRefEmpty": {
+  "source_sourceRefEmpty": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -1409,7 +1409,7 @@
       }
     ]
   },
-  "source.sourceRefSpace": {
+  "source_sourceRefSpace": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -1460,7 +1460,7 @@
       }
     ]
   },
-  "source.sourceRefNull": {
+  "source_sourceRefNull": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -2092,7 +2092,7 @@
       }
     ]
   },
-  "representatives.personIdMissing": {
+  "representatives_personIdMissing": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -2142,7 +2142,7 @@
       }
     ]
   },
-  "representatives.personIdEmpty": {
+  "representatives_personIdEmpty": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -2193,7 +2193,7 @@
       }
     ]
   },
-  "representatives.personIdSpace": {
+  "representatives_personIdSpace": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -2244,7 +2244,7 @@
       }
     ]
   },
-  "representatives.personIdNull": {
+  "representatives_personIdNull": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -2295,7 +2295,7 @@
       }
     ]
   },
-  "representatives.accountRightCodeMissing": {
+  "representatives_accountRightCodeMissing": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -2345,7 +2345,7 @@
       }
     ]
   },
-  "representatives.accountRightCodeEmpty": {
+  "representatives_accountRightCodeEmpty": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -2396,7 +2396,7 @@
       }
     ]
   },
-  "representatives.accountRightCodeSpace": {
+  "representatives_accountRightCodeSpace": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -2447,7 +2447,7 @@
       }
     ]
   },
-  "representatives.accountRightCodeNull": {
+  "representatives_accountRightCodeNull": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -2498,7 +2498,7 @@
       }
     ]
   },
-  "representatives.accountRightCodeInvalid": {
+  "representatives_accountRightCodeInvalid": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -2549,7 +2549,7 @@
       }
     ]
   },
-  "representatives.limitsMissing": {
+  "representatives_limitsMissing": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -2591,7 +2591,7 @@
       }
     ]
   },
-  "representatives.limitsEmpty": {
+  "representatives_limitsEmpty": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -2634,7 +2634,7 @@
       }
     ]
   },
-  "representatives.limits.amountMissing": {
+  "representatives_limits_amountMissing": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -2681,7 +2681,7 @@
       }
     ]
   },
-  "representatives.limits.amountEmpty": {
+  "representatives_limits_amountEmpty": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -2729,7 +2729,7 @@
       }
     ]
   },
-  "representatives.limits.amount.amountMissing": {
+  "representatives_limits_amount_amountMissing": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -2779,7 +2779,7 @@
       }
     ]
   },
-  "representatives.limits.amount.amountEmpty": {
+  "representatives_limits_amount_amountEmpty": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -2830,7 +2830,7 @@
       }
     ]
   },
-  "representatives.limits.amount.amountSpace": {
+  "representatives_limits_amount_amountSpace": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -2881,7 +2881,7 @@
       }
     ]
   },
-  "representatives.limits.amount.amountNull": {
+  "representatives_limits_amount_amountNull": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -2932,7 +2932,7 @@
       }
     ]
   },
-  "representatives.limits.amount.currencyCodeMissing": {
+  "representatives_limits_amount_currencyCodeMissing": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -2982,7 +2982,7 @@
       }
     ]
   },
-  "representatives.limits.amount.currencyCodeEmpty": {
+  "representatives_limits_amount_currencyCodeEmpty": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -3033,7 +3033,7 @@
       }
     ]
   },
-  "representatives.limits.amount.currencyCodeSpace": {
+  "representatives_limits_amount_currencyCodeSpace": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -3084,7 +3084,7 @@
       }
     ]
   },
-  "representatives.limits.amount.currencyCodeNull": {
+  "representatives_limits_amount_currencyCodeNull": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -3135,7 +3135,7 @@
       }
     ]
   },
-  "representatives.limits.amount.currencyCodeInvalid": {
+  "representatives_limits_amount_currencyCodeInvalid": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -3186,7 +3186,7 @@
       }
     ]
   },
-  "representatives.limits.accountLimitTypeCodeMissing": {
+  "representatives_limits_accountLimitTypeCodeMissing": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -3236,7 +3236,7 @@
       }
     ]
   },
-  "representatives.limits.accountLimitTypeCodeEmpty": {
+  "representatives_limits_accountLimitTypeCodeEmpty": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -3287,7 +3287,7 @@
       }
     ]
   },
-  "representatives.limits.accountLimitTypeCodeSpace": {
+  "representatives_limits_accountLimitTypeCodeSpace": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -3338,7 +3338,7 @@
       }
     ]
   },
-  "representatives.limits.accountLimitTypeCodeNull": {
+  "representatives_limits_accountLimitTypeCodeNull": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -3389,7 +3389,7 @@
       }
     ]
   },
-  "representatives.limits.accountLimitTypeCodeInvalid": {
+  "representatives_limits_accountLimitTypeCodeInvalid": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -3518,7 +3518,7 @@
       }
     ]
   },
-  "accountNumbers.accountNumberMissing": {
+  "accountNumbers_accountNumberMissing": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -3565,7 +3565,7 @@
       }
     ]
   },
-  "accountNumbers.accountNumberEmpty": {
+  "accountNumbers_accountNumberEmpty": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -3613,7 +3613,7 @@
       }
     ]
   },
-  "accountNumbers.accountNumber.typeMissing": {
+  "accountNumbers_accountNumber_typeMissing": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -3663,7 +3663,7 @@
       }
     ]
   },
-  "accountNumbers.accountNumber.typeEmpty": {
+  "accountNumbers_accountNumber_typeEmpty": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -3714,7 +3714,7 @@
       }
     ]
   },
-  "accountNumbers.accountNumber.typeSpace": {
+  "accountNumbers_accountNumber_typeSpace": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -3765,7 +3765,7 @@
       }
     ]
   },
-  "accountNumbers.accountNumber.typeNull": {
+  "accountNumbers_accountNumber_typeNull": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -3816,7 +3816,7 @@
       }
     ]
   },
-  "accountNumbers.accountNumber.typeInvalid": {
+  "accountNumbers_accountNumber_typeInvalid": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -3867,7 +3867,7 @@
       }
     ]
   },
-  "accountNumbers.accountNumber.valueMissing": {
+  "accountNumbers_accountNumber_valueMissing": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -3917,7 +3917,7 @@
       }
     ]
   },
-  "accountNumbers.accountNumber.valueEmpty": {
+  "accountNumbers_accountNumber_valueEmpty": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -3968,7 +3968,7 @@
       }
     ]
   },
-  "accountNumbers.accountNumber.valueSpace": {
+  "accountNumbers_accountNumber_valueSpace": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -4019,7 +4019,7 @@
       }
     ]
   },
-  "accountNumbers.accountNumber.valueNull": {
+  "accountNumbers_accountNumber_valueNull": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -4070,7 +4070,7 @@
       }
     ]
   },
-  "accountNumbers.countryCodeMissing": {
+  "accountNumbers_countryCodeMissing": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -4120,7 +4120,7 @@
       }
     ]
   },
-  "accountNumbers.countryCodeEmpty": {
+  "accountNumbers_countryCodeEmpty": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -4171,7 +4171,7 @@
       }
     ]
   },
-  "accountNumbers.countryCodeSpace": {
+  "accountNumbers_countryCodeSpace": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -4222,7 +4222,7 @@
       }
     ]
   },
-  "accountNumbers.countryCodeNull": {
+  "accountNumbers_countryCodeNull": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -4273,7 +4273,7 @@
       }
     ]
   },
-  "accountNumbers.countryCodeInvalid": {
+  "accountNumbers_countryCodeInvalid": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -4324,7 +4324,7 @@
       }
     ]
   },
-  "accountNumbers.financialInstitutionIdMissing": {
+  "accountNumbers_financialInstitutionIdMissing": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -4371,7 +4371,7 @@
       }
     ]
   },
-  "accountNumbers.financialInstitutionIdEmpty": {
+  "accountNumbers_financialInstitutionIdEmpty": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -4419,7 +4419,7 @@
       }
     ]
   },
-  "accountNumbers.financialInstitutionId.typeMissing": {
+  "accountNumbers_financialInstitutionId_typeMissing": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -4469,7 +4469,7 @@
       }
     ]
   },
-  "accountNumbers.financialInstitutionId.typeEmpty": {
+  "accountNumbers_financialInstitutionId_typeEmpty": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -4520,7 +4520,7 @@
       }
     ]
   },
-  "accountNumbers.financialInstitutionId.typeSpace": {
+  "accountNumbers_financialInstitutionId_typeSpace": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -4571,7 +4571,7 @@
       }
     ]
   },
-  "accountNumbers.financialInstitutionId.typeNull": {
+  "accountNumbers_financialInstitutionId_typeNull": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -4622,7 +4622,7 @@
       }
     ]
   },
-  "accountNumbers.financialInstitutionId.typeInvalid": {
+  "accountNumbers_financialInstitutionId_typeInvalid": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -4673,7 +4673,7 @@
       }
     ]
   },
-  "accountNumbers.financialInstitutionId.valueMissing": {
+  "accountNumbers_financialInstitutionId_valueMissing": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -4723,7 +4723,7 @@
       }
     ]
   },
-  "accountNumbers.financialInstitutionId.valueEmpty": {
+  "accountNumbers_financialInstitutionId_valueEmpty": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -4774,7 +4774,7 @@
       }
     ]
   },
-  "accountNumbers.financialInstitutionId.valueSpace": {
+  "accountNumbers_financialInstitutionId_valueSpace": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -4825,7 +4825,7 @@
       }
     ]
   },
-  "accountNumbers.financialInstitutionId.valueNull": {
+  "accountNumbers_financialInstitutionId_valueNull": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -4961,7 +4961,7 @@
     ],
     "limits": []
   },
-  "limits.amountMissing": {
+  "limits_amountMissing": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -5008,7 +5008,7 @@
       }
     ]
   },
-  "limits.amountEmpty": {
+  "limits_amountEmpty": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -5056,7 +5056,7 @@
       }
     ]
   },
-  "limits.amount.amountMissing": {
+  "limits_amount_amountMissing": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -5106,7 +5106,7 @@
       }
     ]
   },
-  "limits.amount.amountEmpty": {
+  "limits_amount_amountEmpty": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -5157,7 +5157,7 @@
       }
     ]
   },
-  "limits.amount.amountSpace": {
+  "limits_amount_amountSpace": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -5208,7 +5208,7 @@
       }
     ]
   },
-  "limits.amount.amountNull": {
+  "limits_amount_amountNull": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -5259,7 +5259,7 @@
       }
     ]
   },
-  "limits.amount.currencyCodeMissing": {
+  "limits_amount_currencyCodeMissing": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -5309,7 +5309,7 @@
       }
     ]
   },
-  "limits.amount.currencyCodeEmpty": {
+  "limits_amount_currencyCodeEmpty": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -5360,7 +5360,7 @@
       }
     ]
   },
-  "limits.amount.currencyCodeSpace": {
+  "limits_amount_currencyCodeSpace": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -5411,7 +5411,7 @@
       }
     ]
   },
-  "limits.amount.currencyCodeNull": {
+  "limits_amount_currencyCodeNull": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -5462,7 +5462,7 @@
       }
     ]
   },
-  "limits.amount.currencyCodeInvalid": {
+  "limits_amount_currencyCodeInvalid": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -5513,7 +5513,7 @@
       }
     ]
   },
-  "limits.accountLimitTypeCodeMissing": {
+  "limits_accountLimitTypeCodeMissing": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -5563,7 +5563,7 @@
       }
     ]
   },
-  "limits.accountLimitTypeCodeEmpty": {
+  "limits_accountLimitTypeCodeEmpty": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -5614,7 +5614,7 @@
       }
     ]
   },
-  "limits.accountLimitTypeCodeSpace": {
+  "limits_accountLimitTypeCodeSpace": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -5665,7 +5665,7 @@
       }
     ]
   },
-  "limits.accountLimitTypeCodeNull": {
+  "limits_accountLimitTypeCodeNull": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -5716,7 +5716,7 @@
       }
     ]
   },
-  "limits.accountLimitTypeCodeInvalid": {
+  "limits_accountLimitTypeCodeInvalid": {
     "accountTypeCode": "CURRENCY",
     "overdraftAmount": {
       "amount": 0.00,
@@ -5768,3 +5768,4 @@
     ]
   }
 }
+
