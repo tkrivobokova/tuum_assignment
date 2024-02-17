@@ -295,4 +295,210 @@ describe("Create a new account", () => {
             expect(response.body).to.have.property("path").that.equal("/api/v4/persons/accounts");
         });
     });
+
+    // status code 405
+    it("should return 405 if PATCH method is used", () => {
+        cy.request({
+            method: "PATCH",
+            url: "https://account-api.sandbox.tuumplatform.com/api/v4/persons/" + personId + "/accounts",
+            headers: headers,
+            failOnStatusCode: false,
+            body: {
+                "accountTypeCode": "CURRENCY",
+                "overdraftAmount": {
+                    "amount": 0.00,
+                    "currencyCode": "EUR"
+                },
+                "personName": "Peter Alexander Schmidt",
+                "source": {
+                    "sourceName": "string",
+                    "sourceRef": "string"
+                },
+                "residencyCountryCode": "DE",
+                "currencyCode": "EUR",
+                "representatives": [
+                    {
+                        "personId": "ID-2001",
+                        "accountRightCode": "ALL",
+                        "limits": [
+                            {
+                                "amount": {
+                                    "amount": 100.00,
+                                    "currencyCode": "EUR"
+                                },
+                                "accountLimitTypeCode": "DAILY"
+                            }
+                        ]
+                    }
+                ],
+                "accountNumbers": [
+                    {
+                        "accountNumber": {
+                            "type": "IBAN",
+                            "value": "EE711266266878335196"
+                        },
+                        "countryCode": "EE",
+                        "financialInstitutionId": {
+                            "type": "BIC",
+                            "value": "123456"
+                        }
+                    }
+                ],
+                "limits": [
+                    {
+                        "amount": {
+                            "amount": 100,
+                            "currencyCode": "EUR"
+                        },
+                        "accountLimitTypeCode": "DAILY"
+                    }
+                ]
+            }
+        }).then((response) => {
+            expect(response.status).to.equal(405);
+            expect(response.body).to.have.property("errors");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
+
+    it("should return 405 if GET method is used", () => {
+        cy.request({
+            method: "GET",
+            url: "https://account-api.sandbox.tuumplatform.com/api/v4/persons/" + personId + "/accounts",
+            headers: headers,
+            failOnStatusCode: false
+        }).then((response) => {
+            expect(response.status).to.equal(405);
+            expect(response.body).to.have.property("errors");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
+
+    it("should return 405 if DELETE method is used", () => {
+        cy.request({
+            method: "DELETE",
+            url: "https://account-api.sandbox.tuumplatform.com/api/v4/persons/" + personId + "/accounts",
+            headers: headers,
+            failOnStatusCode: false,
+            body: {
+                "accountTypeCode": "CURRENCY",
+                "overdraftAmount": {
+                    "amount": 0.00,
+                    "currencyCode": "EUR"
+                },
+                "personName": "Peter Alexander Schmidt",
+                "source": {
+                    "sourceName": "string",
+                    "sourceRef": "string"
+                },
+                "residencyCountryCode": "DE",
+                "currencyCode": "EUR",
+                "representatives": [
+                    {
+                        "personId": "ID-2001",
+                        "accountRightCode": "ALL",
+                        "limits": [
+                            {
+                                "amount": {
+                                    "amount": 100.00,
+                                    "currencyCode": "EUR"
+                                },
+                                "accountLimitTypeCode": "DAILY"
+                            }
+                        ]
+                    }
+                ],
+                "accountNumbers": [
+                    {
+                        "accountNumber": {
+                            "type": "IBAN",
+                            "value": "EE711266266878335196"
+                        },
+                        "countryCode": "EE",
+                        "financialInstitutionId": {
+                            "type": "BIC",
+                            "value": "123456"
+                        }
+                    }
+                ],
+                "limits": [
+                    {
+                        "amount": {
+                            "amount": 100,
+                            "currencyCode": "EUR"
+                        },
+                        "accountLimitTypeCode": "DAILY"
+                    }
+                ]
+            }
+        }).then((response) => {
+            expect(response.status).to.equal(405);
+            expect(response.body).to.have.property("errors");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
+
+    it("should return 405 if PUT method is used", () => {
+        cy.request({
+            method: "PUT",
+            url: "https://account-api.sandbox.tuumplatform.com/api/v4/persons/" + personId + "/accounts",
+            headers: headers,
+            failOnStatusCode: false,
+            body: {
+                "accountTypeCode": "CURRENCY",
+                "overdraftAmount": {
+                    "amount": 0.00,
+                    "currencyCode": "EUR"
+                },
+                "personName": "Peter Alexander Schmidt",
+                "source": {
+                    "sourceName": "string",
+                    "sourceRef": "string"
+                },
+                "residencyCountryCode": "DE",
+                "currencyCode": "EUR",
+                "representatives": [
+                    {
+                        "personId": "ID-2001",
+                        "accountRightCode": "ALL",
+                        "limits": [
+                            {
+                                "amount": {
+                                    "amount": 100.00,
+                                    "currencyCode": "EUR"
+                                },
+                                "accountLimitTypeCode": "DAILY"
+                            }
+                        ]
+                    }
+                ],
+                "accountNumbers": [
+                    {
+                        "accountNumber": {
+                            "type": "IBAN",
+                            "value": "EE711266266878335196"
+                        },
+                        "countryCode": "EE",
+                        "financialInstitutionId": {
+                            "type": "BIC",
+                            "value": "123456"
+                        }
+                    }
+                ],
+                "limits": [
+                    {
+                        "amount": {
+                            "amount": 100,
+                            "currencyCode": "EUR"
+                        },
+                        "accountLimitTypeCode": "DAILY"
+                    }
+                ]
+            }
+        }).then((response) => {
+            expect(response.status).to.equal(405);
+            expect(response.body).to.have.property("errors");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
 })
