@@ -165,4 +165,134 @@ describe("Create a new account", () => {
         });
     });
 
+    //status code 404
+    it("should return 404 if URL is wrong", () => {
+        cy.request({
+            method: "POST",
+            url: "https://account-api.sandbox.tuumplatform.com/api/v4/persons/" + personId + "/account",
+            headers: headers,
+            failOnStatusCode: false,
+            body: {
+                "accountTypeCode": "CURRENCY",
+                "overdraftAmount": {
+                    "amount": 0.00,
+                    "currencyCode": "EUR"
+                },
+                "personName": "Peter Alexander Schmidt",
+                "source": {
+                    "sourceName": "string",
+                    "sourceRef": "string"
+                },
+                "residencyCountryCode": "DE",
+                "currencyCode": "EUR",
+                "representatives": [
+                    {
+                        "personId": "ID-2001",
+                        "accountRightCode": "ALL",
+                        "limits": [
+                            {
+                                "amount": {
+                                    "amount": 100.00,
+                                    "currencyCode": "EUR"
+                                },
+                                "accountLimitTypeCode": "DAILY"
+                            }
+                        ]
+                    }
+                ],
+                "accountNumbers": [
+                    {
+                        "accountNumber": {
+                            "type": "IBAN",
+                            "value": "EE711266266878335196"
+                        },
+                        "countryCode": "EE",
+                        "financialInstitutionId": {
+                            "type": "BIC",
+                            "value": "123456"
+                        }
+                    }
+                ],
+                "limits": [
+                    {
+                        "amount": {
+                            "amount": 100,
+                            "currencyCode": "EUR"
+                        },
+                        "accountLimitTypeCode": "DAILY"
+                    }
+                ]
+            }
+
+        }).then((response) => {
+            expect(response.status).to.equal(404);
+            expect(response.body).to.have.property("error").that.equal("Not Found");
+            expect(response.body).to.have.property("path").that.equal("/api/v4/persons/" + personId + "/account");
+        });
+    });
+
+    it("should return 404 if personId is missing", () => {
+        cy.request({
+            method: "POST",
+            url: "https://account-api.sandbox.tuumplatform.com/api/v4/persons/accounts",
+            headers: headers,
+            failOnStatusCode: false,
+            body: {
+                "accountTypeCode": "CURRENCY",
+                "overdraftAmount": {
+                    "amount": 0.00,
+                    "currencyCode": "EUR"
+                },
+                "personName": "Peter Alexander Schmidt",
+                "source": {
+                    "sourceName": "string",
+                    "sourceRef": "string"
+                },
+                "residencyCountryCode": "DE",
+                "currencyCode": "EUR",
+                "representatives": [
+                    {
+                        "personId": "ID-2001",
+                        "accountRightCode": "ALL",
+                        "limits": [
+                            {
+                                "amount": {
+                                    "amount": 100.00,
+                                    "currencyCode": "EUR"
+                                },
+                                "accountLimitTypeCode": "DAILY"
+                            }
+                        ]
+                    }
+                ],
+                "accountNumbers": [
+                    {
+                        "accountNumber": {
+                            "type": "IBAN",
+                            "value": "EE711266266878335196"
+                        },
+                        "countryCode": "EE",
+                        "financialInstitutionId": {
+                            "type": "BIC",
+                            "value": "123456"
+                        }
+                    }
+                ],
+                "limits": [
+                    {
+                        "amount": {
+                            "amount": 100,
+                            "currencyCode": "EUR"
+                        },
+                        "accountLimitTypeCode": "DAILY"
+                    }
+                ]
+            }
+
+        }).then((response) => {
+            expect(response.status).to.equal(404);
+            expect(response.body).to.have.property("error").that.equal("Not Found");
+            expect(response.body).to.have.property("path").that.equal("/api/v4/persons/accounts");
+        });
+    });
 })
