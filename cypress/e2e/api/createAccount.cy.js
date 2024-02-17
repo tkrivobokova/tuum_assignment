@@ -285,6 +285,788 @@ describe("Create a new account", () => {
     });
 
     // status code 400
+    it("should return 400 if payload is missing", () => {
+        cy.request({
+            method: "POST",
+            url: "https://account-api.sandbox.tuumplatform.com/api/v4/persons/" + personId + "/accounts",
+            headers: headers,
+            failOnStatusCode: false
+        }).then((response) => {
+            expect(response.status).to.equal(400);
+            expect(response.body).to.have.property("errors");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
+
+    it("should return 400 if payload is empty object", () => {
+        cy.request({
+            method: "POST",
+            url: "https://account-api.sandbox.tuumplatform.com/api/v4/persons/" + personId + "/accounts",
+            headers: headers,
+            failOnStatusCode: false,
+            body: emptyObject400
+        }).then((response) => {
+            expect(response.status).to.equal(400);
+            expect(response.body.errors).to.include("err.validationErrors");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
+
+    it("should return 400 if accountTypeCode is missing", () => {
+        cy.request({
+            method: "POST",
+            url: "https://account-api.sandbox.tuumplatform.com/api/v4/persons/" + personId + "/accounts",
+            headers: headers,
+            failOnStatusCode: false,
+            body: accountTypeCodeMissing400
+        }).then((response) => {
+            expect(response.status).to.equal(400);
+            expect(response.body.errors).to.include("err.validationErrors");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
+
+    it("should return 400 if accountTypeCode is empty", () => {
+        cy.request({
+            method: "POST",
+            url: "https://account-api.sandbox.tuumplatform.com/api/v4/persons/" + personId + "/accounts",
+            headers: headers,
+            failOnStatusCode: false,
+            body: accountTypeCodeEmpty400
+        }).then((response) => {
+            expect(response.status).to.equal(400);
+            expect(response.body.errors).to.include("err.validationErrors");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
+
+    it("should return 400 if accountTypeCode contains only spaces", () => {
+        cy.request({
+            method: "POST",
+            url: "https://account-api.sandbox.tuumplatform.com/api/v4/persons/" + personId + "/accounts",
+            headers: headers,
+            failOnStatusCode: false,
+            body: accountTypeCodeSpace400
+        }).then((response) => {
+            expect(response.status).to.equal(400);
+            expect(response.body.errors).to.include("err.validationErrors");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
+
+    it("should return 400 if accountTypeCode is null", () => {
+        cy.request({
+            method: "POST",
+            url: "https://account-api.sandbox.tuumplatform.com/api/v4/persons/" + personId + "/accounts",
+            headers: headers,
+            failOnStatusCode: false,
+            body: accountTypeCodeNull400
+        }).then((response) => {
+            expect(response.status).to.equal(400);
+            expect(response.body.errors).to.include("err.validationErrors");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
+
+    it("should return 400 if overdraftAmount is missing", () => {
+        cy.request({
+            method: "POST",
+            url: "https://account-api.sandbox.tuumplatform.com/api/v4/persons/" + personId + "/accounts",
+            headers: headers,
+            failOnStatusCode: false,
+            body: overdraftAmountMissing400
+        }).then((response) => {
+            expect(response.status).to.equal(400);
+            expect(response.body.errors).to.include("err.validationErrors");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
+
+    it("should return 400 if overdraftAmount is empty", () => {
+        cy.request({
+            method: "POST",
+            url: "https://account-api.sandbox.tuumplatform.com/api/v4/persons/" + personId + "/accounts",
+            headers: headers,
+            failOnStatusCode: false,
+            body: overdraftAmountEmpty400
+        }).then((response) => {
+            expect(response.status).to.equal(400);
+            expect(response.body.errors).to.include("err.validationErrors");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
+
+    it("should return 400 if overdraftAmount_amount is missing", () => {
+        cy.request({
+            method: "POST",
+            url: "https://account-api.sandbox.tuumplatform.com/api/v4/persons/" + personId + "/accounts",
+            headers: headers,
+            failOnStatusCode: false,
+            body: overdraftAmount_amountMissing400
+        }).then((response) => {
+            expect(response.status).to.equal(400);
+            expect(response.body.errors).to.include("err.validationErrors");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
+
+    it("should return 400 if overdraftAmount_amount is empty", () => {
+        cy.request({
+            method: "POST",
+            url: "https://account-api.sandbox.tuumplatform.com/api/v4/persons/" + personId + "/accounts",
+            headers: headers,
+            failOnStatusCode: false,
+            body: overdraftAmount_amountEmpty400
+        }).then((response) => {
+            expect(response.status).to.equal(400);
+            expect(response.body.errors).to.include("err.validationErrors");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
+
+    it("should return 400 if overdraftAmount_amount contains only spaces", () => {
+        cy.request({
+            method: "POST",
+            url: "https://account-api.sandbox.tuumplatform.com/api/v4/persons/" + personId + "/accounts",
+            headers: headers,
+            failOnStatusCode: false,
+            body: overdraftAmount_amountSpace400
+        }).then((response) => {
+            expect(response.status).to.equal(400);
+            expect(response.body.errors).to.include("err.validationErrors");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
+
+    it("should return 400 if overdraftAmount_amount is null", () => {
+        cy.request({
+            method: "POST",
+            url: "https://account-api.sandbox.tuumplatform.com/api/v4/persons/" + personId + "/accounts",
+            headers: headers,
+            failOnStatusCode: false,
+            body: overdraftAmount_amountNull400
+        }).then((response) => {
+            expect(response.status).to.equal(400);
+            expect(response.body.errors).to.include("err.validationErrors");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
+
+    it("should return 400 if overdraftAmount_currencyCode is missing", () => {
+        cy.request({
+            method: "POST",
+            url: "https://account-api.sandbox.tuumplatform.com/api/v4/persons/" + personId + "/accounts",
+            headers: headers,
+            failOnStatusCode: false,
+            body: overdraftAmount_currencyCodeMissing400
+        }).then((response) => {
+            expect(response.status).to.equal(400);
+            expect(response.body.errors).to.include("err.validationErrors");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
+
+    it("should return 400 if overdraftAmount_currencyCode is empty", () => {
+        cy.request({
+            method: "POST",
+            url: "https://account-api.sandbox.tuumplatform.com/api/v4/persons/" + personId + "/accounts",
+            headers: headers,
+            failOnStatusCode: false,
+            body: overdraftAmount_currencyCodeEmpty400
+        }).then((response) => {
+            expect(response.status).to.equal(400);
+            expect(response.body.errors).to.include("err.validationErrors");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
+
+    it("should return 400 if overdraftAmount_currencyCode contains only spaces", () => {
+        cy.request({
+            method: "POST",
+            url: "https://account-api.sandbox.tuumplatform.com/api/v4/persons/" + personId + "/accounts",
+            headers: headers,
+            failOnStatusCode: false,
+            body: overdraftAmount_currencyCodeSpace400
+        }).then((response) => {
+            expect(response.status).to.equal(400);
+            expect(response.body.errors).to.include("err.validationErrors");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
+
+    it("should return 400 if overdraftAmount_currencyCode is null", () => {
+        cy.request({
+            method: "POST",
+            url: "https://account-api.sandbox.tuumplatform.com/api/v4/persons/" + personId + "/accounts",
+            headers: headers,
+            failOnStatusCode: false,
+            body: overdraftAmount_currencyCodeNull400
+        }).then((response) => {
+            expect(response.status).to.equal(400);
+            expect(response.body.errors).to.include("err.validationErrors");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
+
+    it("should return 400 if overdraftAmount_currencyCode is invalid", () => {
+        cy.request({
+            method: "POST",
+            url: "https://account-api.sandbox.tuumplatform.com/api/v4/persons/" + personId + "/accounts",
+            headers: headers,
+            failOnStatusCode: false,
+            body: overdraftAmount_currencyCodeInvalid400
+        }).then((response) => {
+            expect(response.status).to.equal(400);
+            expect(response.body.errors).to.include("err.validationErrors");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
+
+    it("should return 400 if personName is missing", () => {
+        cy.request({
+            method: "POST",
+            url: "https://account-api.sandbox.tuumplatform.com/api/v4/persons/" + personId + "/accounts",
+            headers: headers,
+            failOnStatusCode: false,
+            body: personNameMissing400
+        }).then((response) => {
+            expect(response.status).to.equal(400);
+            expect(response.body.errors).to.include("err.validationErrors");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
+
+    it("should return 400 if personName is empty", () => {
+        cy.request({
+            method: "POST",
+            url: "https://account-api.sandbox.tuumplatform.com/api/v4/persons/" + personId + "/accounts",
+            headers: headers,
+            failOnStatusCode: false,
+            body: personNameEmpty400
+        }).then((response) => {
+            expect(response.status).to.equal(400);
+            expect(response.body.errors).to.include("err.validationErrors");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
+
+    it("should return 400 if personName contains only spaces", () => {
+        cy.request({
+            method: "POST",
+            url: "https://account-api.sandbox.tuumplatform.com/api/v4/persons/" + personId + "/accounts",
+            headers: headers,
+            failOnStatusCode: false,
+            body: personNameSpace400
+        }).then((response) => {
+            expect(response.status).to.equal(400);
+            expect(response.body.errors).to.include("err.validationErrors");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
+
+    it("should return 400 if personName is null", () => {
+        cy.request({
+            method: "POST",
+            url: "https://account-api.sandbox.tuumplatform.com/api/v4/persons/" + personId + "/accounts",
+            headers: headers,
+            failOnStatusCode: false,
+            body: personNameNull400
+        }).then((response) => {
+            expect(response.status).to.equal(400);
+            expect(response.body.errors).to.include("err.validationErrors");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
+
+    it("should return 400 if source is missing", () => {
+        cy.request({
+            method: "POST",
+            url: "https://account-api.sandbox.tuumplatform.com/api/v4/persons/" + personId + "/accounts",
+            headers: headers,
+            failOnStatusCode: false,
+            body: sourceMissing400
+        }).then((response) => {
+            expect(response.status).to.equal(400);
+            expect(response.body.errors).to.include("err.validationErrors");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
+
+    it("should return 400 if source is empty", () => {
+        cy.request({
+            method: "POST",
+            url: "https://account-api.sandbox.tuumplatform.com/api/v4/persons/" + personId + "/accounts",
+            headers: headers,
+            failOnStatusCode: false,
+            body: sourceEmpty400
+        }).then((response) => {
+            expect(response.status).to.equal(400);
+            expect(response.body.errors).to.include("err.validationErrors");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
+
+    it("should return 400 if source_sourceName is missing", () => {
+        cy.request({
+            method: "POST",
+            url: "https://account-api.sandbox.tuumplatform.com/api/v4/persons/" + personId + "/accounts",
+            headers: headers,
+            failOnStatusCode: false,
+            body: source_sourceNameMissing400
+        }).then((response) => {
+            expect(response.status).to.equal(400);
+            expect(response.body.errors).to.include("err.validationErrors");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
+
+    it("should return 400 if source_sourceName is empty", () => {
+        cy.request({
+            method: "POST",
+            url: "https://account-api.sandbox.tuumplatform.com/api/v4/persons/" + personId + "/accounts",
+            headers: headers,
+            failOnStatusCode: false,
+            body: source_sourceNameEmpty400
+        }).then((response) => {
+            expect(response.status).to.equal(400);
+            expect(response.body.errors).to.include("err.validationErrors");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
+
+    it("should return 400 if source_sourceName contains only spaces", () => {
+        cy.request({
+            method: "POST",
+            url: "https://account-api.sandbox.tuumplatform.com/api/v4/persons/" + personId + "/accounts",
+            headers: headers,
+            failOnStatusCode: false,
+            body: source_sourceNameSpace400
+        }).then((response) => {
+            expect(response.status).to.equal(400);
+            expect(response.body.errors).to.include("err.validationErrors");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
+
+    it("should return 400 if source_sourceName is null", () => {
+        cy.request({
+            method: "POST",
+            url: "https://account-api.sandbox.tuumplatform.com/api/v4/persons/" + personId + "/accounts",
+            headers: headers,
+            failOnStatusCode: false,
+            body: source_sourceNameNull400
+        }).then((response) => {
+            expect(response.status).to.equal(400);
+            expect(response.body.errors).to.include("err.validationErrors");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
+
+    it("should return 400 if source_sourceRef is missing", () => {
+        cy.request({
+            method: "POST",
+            url: "https://account-api.sandbox.tuumplatform.com/api/v4/persons/" + personId + "/accounts",
+            headers: headers,
+            failOnStatusCode: false,
+            body: source_sourceRefMissing400
+        }).then((response) => {
+            expect(response.status).to.equal(400);
+            expect(response.body.errors).to.include("err.validationErrors");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
+
+    it("should return 400 if source_sourceRef is empty", () => {
+        cy.request({
+            method: "POST",
+            url: "https://account-api.sandbox.tuumplatform.com/api/v4/persons/" + personId + "/accounts",
+            headers: headers,
+            failOnStatusCode: false,
+            body: source_sourceRefEmpty400
+        }).then((response) => {
+            expect(response.status).to.equal(400);
+            expect(response.body.errors).to.include("err.validationErrors");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
+
+    it("should return 400 if source_sourceRef contains only spaces", () => {
+        cy.request({
+            method: "POST",
+            url: "https://account-api.sandbox.tuumplatform.com/api/v4/persons/" + personId + "/accounts",
+            headers: headers,
+            failOnStatusCode: false,
+            body: source_sourceRefSpace400
+        }).then((response) => {
+            expect(response.status).to.equal(400);
+            expect(response.body.errors).to.include("err.validationErrors");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
+
+    it("should return 400 if source_sourceRef is null", () => {
+        cy.request({
+            method: "POST",
+            url: "https://account-api.sandbox.tuumplatform.com/api/v4/persons/" + personId + "/accounts",
+            headers: headers,
+            failOnStatusCode: false,
+            body: source_sourceRefNull400
+        }).then((response) => {
+            expect(response.status).to.equal(400);
+            expect(response.body.errors).to.include("err.validationErrors");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
+
+    it("should return 400 if residencyCountryCode is missing", () => {
+        cy.request({
+            method: "POST",
+            url: "https://account-api.sandbox.tuumplatform.com/api/v4/persons/" + personId + "/accounts",
+            headers: headers,
+            failOnStatusCode: false,
+            body: residencyCountryCodeMissing400
+        }).then((response) => {
+            expect(response.status).to.equal(400);
+            expect(response.body.errors).to.include("err.validationErrors");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
+
+    it("should return 400 if residencyCountryCode is empty", () => {
+        cy.request({
+            method: "POST",
+            url: "https://account-api.sandbox.tuumplatform.com/api/v4/persons/" + personId + "/accounts",
+            headers: headers,
+            failOnStatusCode: false,
+            body: residencyCountryCodeEmpty400
+        }).then((response) => {
+            expect(response.status).to.equal(400);
+            expect(response.body.errors).to.include("err.validationErrors");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
+
+    it("should return 400 if residencyCountryCode contains only spaces", () => {
+        cy.request({
+            method: "POST",
+            url: "https://account-api.sandbox.tuumplatform.com/api/v4/persons/" + personId + "/accounts",
+            headers: headers,
+            failOnStatusCode: false,
+            body: residencyCountryCodeSpace400
+        }).then((response) => {
+            expect(response.status).to.equal(400);
+            expect(response.body.errors).to.include("err.validationErrors");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
+
+    it("should return 400 if residencyCountryCode is null", () => {
+        cy.request({
+            method: "POST",
+            url: "https://account-api.sandbox.tuumplatform.com/api/v4/persons/" + personId + "/accounts",
+            headers: headers,
+            failOnStatusCode: false,
+            body: residencyCountryCodeNull400
+        }).then((response) => {
+            expect(response.status).to.equal(400);
+            expect(response.body.errors).to.include("err.validationErrors");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
+
+    it("should return 400 if residencyCountryCode is invalid", () => {
+        cy.request({
+            method: "POST",
+            url: "https://account-api.sandbox.tuumplatform.com/api/v4/persons/" + personId + "/accounts",
+            headers: headers,
+            failOnStatusCode: false,
+            body: residencyCountryCodeInvalid400
+        }).then((response) => {
+            expect(response.status).to.equal(400);
+            expect(response.body.errors).to.include("err.validationErrors");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
+
+    it("should return 400 if currencyCode is missing", () => {
+        cy.request({
+            method: "POST",
+            url: "https://account-api.sandbox.tuumplatform.com/api/v4/persons/" + personId + "/accounts",
+            headers: headers,
+            failOnStatusCode: false,
+            body: currencyCodeMissing400
+        }).then((response) => {
+            expect(response.status).to.equal(400);
+            expect(response.body.errors).to.include("err.validationErrors");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
+
+    it("should return 400 if currencyCode is empty", () => {
+        cy.request({
+            method: "POST",
+            url: "https://account-api.sandbox.tuumplatform.com/api/v4/persons/" + personId + "/accounts",
+            headers: headers,
+            failOnStatusCode: false,
+            body: currencyCodeEmpty400
+        }).then((response) => {
+            expect(response.status).to.equal(400);
+            expect(response.body.errors).to.include("err.validationErrors");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
+
+    it("should return 400 if currencyCode contains only spaces", () => {
+        cy.request({
+            method: "POST",
+            url: "https://account-api.sandbox.tuumplatform.com/api/v4/persons/" + personId + "/accounts",
+            headers: headers,
+            failOnStatusCode: false,
+            body: currencyCodeSpace400
+        }).then((response) => {
+            expect(response.status).to.equal(400);
+            expect(response.body.errors).to.include("err.validationErrors");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
+
+    it("should return 400 if currencyCode is null", () => {
+        cy.request({
+            method: "POST",
+            url: "https://account-api.sandbox.tuumplatform.com/api/v4/persons/" + personId + "/accounts",
+            headers: headers,
+            failOnStatusCode: false,
+            body: currencyCodeNull400
+        }).then((response) => {
+            expect(response.status).to.equal(400);
+            expect(response.body.errors).to.include("err.validationErrors");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
+
+    it("should return 400 if currencyCode is invalid", () => {
+        cy.request({
+            method: "POST",
+            url: "https://account-api.sandbox.tuumplatform.com/api/v4/persons/" + personId + "/accounts",
+            headers: headers,
+            failOnStatusCode: false,
+            body: currencyCodeInvalid400
+        }).then((response) => {
+            expect(response.status).to.equal(400);
+            expect(response.body.errors).to.include("err.validationErrors");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
+
+    it("should return 400 if representatives is missing", () => {
+        cy.request({
+            method: "POST",
+            url: "https://account-api.sandbox.tuumplatform.com/api/v4/persons/" + personId + "/accounts",
+            headers: headers,
+            failOnStatusCode: false,
+            body: representativesMissing400
+        }).then((response) => {
+            expect(response.status).to.equal(400);
+            expect(response.body.errors).to.include("err.validationErrors");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
+
+    it("should return 400 if representatives is empty", () => {
+        cy.request({
+            method: "POST",
+            url: "https://account-api.sandbox.tuumplatform.com/api/v4/persons/" + personId + "/accounts",
+            headers: headers,
+            failOnStatusCode: false,
+            body: representativesEmpty400
+        }).then((response) => {
+            expect(response.status).to.equal(400);
+            expect(response.body.errors).to.include("err.validationErrors");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
+
+    it("should return 400 if representatives_personId is missing", () => {
+        cy.request({
+            method: "POST",
+            url: "https://account-api.sandbox.tuumplatform.com/api/v4/persons/" + personId + "/accounts",
+            headers: headers,
+            failOnStatusCode: false,
+            body: representatives_personIdMissing400
+        }).then((response) => {
+            expect(response.status).to.equal(400);
+            expect(response.body.errors).to.include("err.validationErrors");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
+
+    it("should return 400 if representatives_personId is empty", () => {
+        cy.request({
+            method: "POST",
+            url: "https://account-api.sandbox.tuumplatform.com/api/v4/persons/" + personId + "/accounts",
+            headers: headers,
+            failOnStatusCode: false,
+            body: representatives_personIdEmpty400
+        }).then((response) => {
+            expect(response.status).to.equal(400);
+            expect(response.body.errors).to.include("err.validationErrors");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
+
+    it("should return 400 if representatives_personId contains only spaces", () => {
+        cy.request({
+            method: "POST",
+            url: "https://account-api.sandbox.tuumplatform.com/api/v4/persons/" + personId + "/accounts",
+            headers: headers,
+            failOnStatusCode: false,
+            body: representatives_personIdSpace400
+        }).then((response) => {
+            expect(response.status).to.equal(400);
+            expect(response.body.errors).to.include("err.validationErrors");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
+
+    it("should return 400 if representatives_personId is null", () => {
+        cy.request({
+            method: "POST",
+            url: "https://account-api.sandbox.tuumplatform.com/api/v4/persons/" + personId + "/accounts",
+            headers: headers,
+            failOnStatusCode: false,
+            body: representatives_personIdNull400
+        }).then((response) => {
+            expect(response.status).to.equal(400);
+            expect(response.body.errors).to.include("err.validationErrors");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
+
+    it("should return 400 if representatives_accountRightCode is missing", () => {
+        cy.request({
+            method: "POST",
+            url: "https://account-api.sandbox.tuumplatform.com/api/v4/persons/" + personId + "/accounts",
+            headers: headers,
+            failOnStatusCode: false,
+            body: representatives_accountRightCodeMissing400
+        }).then((response) => {
+            expect(response.status).to.equal(400);
+            expect(response.body.errors).to.include("err.validationErrors");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
+
+    it("should return 400 if representatives_accountRightCode is empty", () => {
+        cy.request({
+            method: "POST",
+            url: "https://account-api.sandbox.tuumplatform.com/api/v4/persons/" + personId + "/accounts",
+            headers: headers,
+            failOnStatusCode: false,
+            body: representatives_accountRightCodeEmpty400
+        }).then((response) => {
+            expect(response.status).to.equal(400);
+            expect(response.body.errors).to.include("err.validationErrors");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
+
+    it("should return 400 if representatives_accountRightCode contains only spaces", () => {
+        cy.request({
+            method: "POST",
+            url: "https://account-api.sandbox.tuumplatform.com/api/v4/persons/" + personId + "/accounts",
+            headers: headers,
+            failOnStatusCode: false,
+            body: representatives_accountRightCodeSpace400
+        }).then((response) => {
+            expect(response.status).to.equal(400);
+            expect(response.body.errors).to.include("err.validationErrors");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
+
+    it("should return 400 if representatives_accountRightCode is null", () => {
+        cy.request({
+            method: "POST",
+            url: "https://account-api.sandbox.tuumplatform.com/api/v4/persons/" + personId + "/accounts",
+            headers: headers,
+            failOnStatusCode: false,
+            body: representatives_accountRightCodeNull400
+        }).then((response) => {
+            expect(response.status).to.equal(400);
+            expect(response.body.errors).to.include("err.validationErrors");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
+
+    it("should return 400 if representatives_accountRightCode is invalid", () => {
+        cy.request({
+            method: "POST",
+            url: "https://account-api.sandbox.tuumplatform.com/api/v4/persons/" + personId + "/accounts",
+            headers: headers,
+            failOnStatusCode: false,
+            body: representatives_accountRightCodeInvalid400
+        }).then((response) => {
+            expect(response.status).to.equal(400);
+            expect(response.body.errors).to.include("err.validationErrors");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
+
+    it("should return 400 if representatives_limits is missing", () => {
+        cy.request({
+            method: "POST",
+            url: "https://account-api.sandbox.tuumplatform.com/api/v4/persons/" + personId + "/accounts",
+            headers: headers,
+            failOnStatusCode: false,
+            body: representatives_limitsMissing400
+        }).then((response) => {
+            expect(response.status).to.equal(400);
+            expect(response.body.errors).to.include("err.validationErrors");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
+
+    it("should return 400 if representatives_limits is empty", () => {
+        cy.request({
+            method: "POST",
+            url: "https://account-api.sandbox.tuumplatform.com/api/v4/persons/" + personId + "/accounts",
+            headers: headers,
+            failOnStatusCode: false,
+            body: representatives_limitsEmpty400
+        }).then((response) => {
+            expect(response.status).to.equal(400);
+            expect(response.body.errors).to.include("err.validationErrors");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
+
+    it("should return 400 if representatives_limits_amount is missing", () => {
+        cy.request({
+            method: "POST",
+            url: "https://account-api.sandbox.tuumplatform.com/api/v4/persons/" + personId + "/accounts",
+            headers: headers,
+            failOnStatusCode: false,
+            body: representatives_limits_amountMissing400
+        }).then((response) => {
+            expect(response.status).to.equal(400);
+            expect(response.body.errors).to.include("err.validationErrors");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
+
+    it("should return 400 if representatives_limits_amount is empty", () => {
+        cy.request({
+            method: "POST",
+            url: "https://account-api.sandbox.tuumplatform.com/api/v4/persons/" + personId + "/accounts",
+            headers: headers,
+            failOnStatusCode: false,
+            body: representatives_limits_amountEmpty400
+        }).then((response) => {
+            expect(response.status).to.equal(400);
+            expect(response.body.errors).to.include("err.validationErrors");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
 
     // status code 401
     it("should return 401 if user is not logged in", () => {
