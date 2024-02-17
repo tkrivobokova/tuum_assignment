@@ -97,4 +97,72 @@ describe("Create a new account", () => {
         });
     });
 
+    // status code 400
+
+    // status code 401
+    it("should return 401 if user is not logged in", () => {
+        cy.request({
+            method: "POST",
+            url: "https://account-api.sandbox.tuumplatform.com/api/v4/persons/" + personId + "/accounts",
+            headers: {
+                "x-channel-code": "SYSTEM",
+                "x-tenant-code": "MB"
+            },
+            failOnStatusCode: false,
+            body: {
+                "accountTypeCode": "CURRENCY",
+                "overdraftAmount": {
+                    "amount": 0.00,
+                    "currencyCode": "EUR"
+                },
+                "personName": "Peter Alexander Schmidt",
+                "source": {
+                    "sourceName": "string",
+                    "sourceRef": "string"
+                },
+                "residencyCountryCode": "DE",
+                "currencyCode": "EUR",
+                "representatives": [
+                    {
+                        "personId": "ID-2001",
+                        "accountRightCode": "ALL",
+                        "limits": [
+                            {
+                                "amount": {
+                                    "amount": 100.00,
+                                    "currencyCode": "EUR"
+                                },
+                                "accountLimitTypeCode": "DAILY"
+                            }
+                        ]
+                    }
+                ],
+                "accountNumbers": [
+                    {
+                        "accountNumber": {
+                            "type": "IBAN",
+                            "value": "EE711266266878335196"
+                        },
+                        "countryCode": "EE",
+                        "financialInstitutionId": {
+                            "type": "BIC",
+                            "value": "123456"
+                        }
+                    }
+                ],
+                "limits": [
+                    {
+                        "amount": {
+                            "amount": 100,
+                            "currencyCode": "EUR"
+                        },
+                        "accountLimitTypeCode": "DAILY"
+                    }
+                ]
+            }
+        }).then((response) => {
+            expect(response.status).to.equal(401);
+        });
+    });
+
 })
