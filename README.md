@@ -11,7 +11,7 @@ Test Strategy can be found here: [Test Strategy](/documentation/TESTSTRATEGY.md)
 Test Plan can be found here: [Test Plan](/documentation/TESTPLAN.md)
 
 ## Test Results
-Test results with errors explanation can be found here: [Test Strategy](/documentation/TESTRESULTS.md)
+Test results with errors explanation can be found here: [Test Results](/documentation/TESTRESULTS.md)
 
 ## Tutorial "How to run API tests"
 
