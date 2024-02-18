@@ -20,7 +20,7 @@
 ![create person tests error list](results_images/img_10.png)
 
 #### **Error 1**
-**Error:** status code 500 is return when the payload is missing, while should have been 400 status code
+**Error:** status code 500 is returned when the payload is missing, while should have been 400 status code
 
 If payload is missing the program should return status code 400 because the valid payload was not provided from the 
 client-side, not from the server-side. Which means, that the client-side error happened and client-side errors should 
@@ -28,7 +28,7 @@ are 4xx status codes.
 
 
 #### **Errors 2-9**
-**Error:** status code 500 is return when personTypeCode or addressTypeCode is missing/empty/null/spaces only, while should have been 400 status code
+**Error:** status code 500 is returned when personTypeCode or addressTypeCode is missing/empty/null/spaces only, while should have been 400 status code
 
 If a required field is missing or empty/null/contains only spaces the program should return 400 status code
 because the valid payload was not provided from the client-side, not from the server-side. Which means, that the client-side error happened and client-side errors should
@@ -62,7 +62,6 @@ customerGroupCode is not a mandatory field, so the system should not return a va
 #### **Error 2**
 // TODO
 
-
 ## "Get balances" endpoint test results
 ### In general:
 ![get balances tests results](img_4.png)
@@ -81,3 +80,24 @@ might be and expected behavior due to system's design.
 **Error:** when POST method is used instead of GET the status code 400 is returned instead of 405 status code
 
 Using not allowed method should end up in 405 status code.
+
+## "Create transactions" endpoint test results
+### In general:
+![create transactions tests results](img_5.png)
+### In details:
+![create transactions tests results list](img_6.png)
+![create transactions tests results list](img_7.png)
+### Explanation to the failed tests:
+![img_8.png](img_8.png)
+#### **Error 1**
+**Error:** status code 500 is returned when the payload is missing, while should have been 400 status code
+
+If payload is missing the program should return status code 400 because the valid payload was not provided from the
+client-side, not from the server-side. Which means, that the client-side error happened and client-side errors should
+are 4xx status codes.
+#### **Error 2**
+**Error:** status code 405 is returned when accountId is not added to the request URL instead of 404 status code
+
+If URL does not contain accountId it makes the request URL wrong. There is no matching requests in the Swagger, which 
+could have potentially return 405 status code then turning to given URL, so the status code returned should be 404 due 
+to invalid request URL
