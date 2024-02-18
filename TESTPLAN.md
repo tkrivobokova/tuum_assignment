@@ -16,13 +16,14 @@ The objective of this testing effort is to test the behavior of the API endpoint
   * Create transactions
 * Authorization check
 * Required data presents check
+* Code validity check
 * HTTP method usage
 
 ### Out of scope:
 * Performance testing
 * Load testing
 * Security testing beyond the authorization check
-* Data validation check beyond the presents of the required field
+* Data validation check beyond the presents of the required field and code validity
 * Status code 5xx (server errors) testing
 * Status code 403 testing
 * Test cases documentation
