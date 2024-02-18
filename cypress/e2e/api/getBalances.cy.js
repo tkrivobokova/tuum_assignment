@@ -5,7 +5,7 @@ const currencyInvalid = "PEW";
 let jwtToken;
 let headers;
 
-describe("Create a new account", () => {
+describe("Get person balances", () => {
     // login
     it("should login to get jwtToken", () => {
         cy.request({

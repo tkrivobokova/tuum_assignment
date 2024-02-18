@@ -1,23 +1,23 @@
 # Test Results
 
 ## Test results in general
-![test results overall](results_images/img.png)
+![test results overall](../results_images/img.png)
 
 ## "Create person" endpoint test results
 ### In general:
-![create person tests results](results_images/img_1.png)
+![create person tests results](../results_images/img_1.png)
 ### In details:
-![create person tests results list](results_images/img_2.png)
-![create person tests results list](results_images/img_3.png)
-![create person tests results list](results_images/img_4.png)
+![create person tests results list](../results_images/img_2.png)
+![create person tests results list](../results_images/img_3.png)
+![create person tests results list](../results_images/img_4.png)
 
 ### Explanation to the failed tests:
-![create person tests error list](results_images/img_5.png)
-![create person tests error list](results_images/img_6.png)
-![create person tests error list](results_images/img_7.png)
-![create person tests error list](results_images/img_8.png)
-![create person tests error list](results_images/img_9.png)
-![create person tests error list](results_images/img_10.png)
+![create person tests error list](../results_images/img_5.png)
+![create person tests error list](../results_images/img_6.png)
+![create person tests error list](../results_images/img_7.png)
+![create person tests error list](../results_images/img_8.png)
+![create person tests error list](../results_images/img_9.png)
+![create person tests error list](../results_images/img_10.png)
 
 #### **Error 1**
 **Error:** status code 500 is returned when the payload is missing, while should have been 400 status code
@@ -42,12 +42,12 @@ if the required field is not provided in the payload, the program should return 
 
 ## "Create account" endpoint test results
 ### In general:
-![create account tests results](results_images/img_11.png)
+![create account tests results](../results_images/img_11.png)
 ### In details:
-![create account tests results list](results_images/img_12.png)
-![create account tests results list](results_images/img_13.png)
+![create account tests results list](../results_images/img_12.png)
+![create account tests results list](../results_images/img_13.png)
 ### Explanation to the failed tests:
-![create account tests error list](results_images/img_14.png)
+![create account tests error list](../results_images/img_14.png)
 #### **Error 1**
 **Error:** account cannot be created when only mandatory fields are filled in
 
@@ -60,15 +60,19 @@ According to endpoint documentation required fields are:
 customerGroupCode is not a mandatory field, so the system should not return a validation error
 
 #### **Error 2**
-// TODO
+**Error:** when sending request with currencyCode, which is not supported, when status code 400 but the validation error
+for currencyCode invalidity is not present
+
+The system has a list of supported currency codes and should not allow a client to send non-existing currency. It
+might be and expected behavior due to system's design.
 
 ## "Get balances" endpoint test results
 ### In general:
-![get balances tests results](results_images/img_15.png)
+![get balances tests results](../results_images/img_15.png)
 ### In details:
-
+![get balances tests results list](../results_images/img_20.png)
 ### Explanation to the failed tests:
-
+![get balances tests error list](../results_images/img_21.png)
 #### **Error 1**
 **Error:** when customer request for balance with currencyCode, which is not supported, when status code 200 is returned 
 instead of status code 400
@@ -83,13 +87,13 @@ Using not allowed method should end up in 405 status code.
 
 ## "Create transactions" endpoint test results
 ### In general:
-![create transactions tests results](results_images/img_16.png)
+![create transactions tests results](../results_images/img_16.png)
 ### In details:
-![create transactions tests results list](results_images/img_17.png)
-![create transactions tests results list](results_images/img_18.png)
+![create transactions tests results list](../results_images/img_17.png)
+![create transactions tests results list](../results_images/img_18.png)
 ### Explanation to the failed tests:
-![create transactions tests error list](results_images/img_19.png)
-![create transactions tests error list](results_images/img_19.png)
+![create transactions tests error list](../results_images/img_19.png)
+![create transactions tests error list](../results_images/img_19.png)
 #### **Error 1**
 **Error:** status code 500 is returned when the payload is missing, while should have been 400 status code
 
