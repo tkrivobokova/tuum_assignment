@@ -1,0 +1,135 @@
+{
+  "validPayload": {
+    "transactionTypeCode": "CARD_PUR",
+    "money": {
+      "amount": 1.22,
+      "currencyCode": "EUR"
+    }
+  },
+  "emptyObject": {},
+  "transactionTypeCodeMissing": {
+    "money": {
+      "amount": 1.22,
+      "currencyCode": "EUR"
+    }
+  },
+  "transactionTypeCodeEmpty": {
+    "transactionTypeCode": "",
+    "money": {
+      "amount": 1.22,
+      "currencyCode": "EUR"
+    }
+  },
+  "transactionTypeCodeSpace": {
+    "transactionTypeCode": " ",
+    "money": {
+      "amount": 1.22,
+      "currencyCode": "EUR"
+    }
+  },
+  "transactionTypeCodeNull": {
+    "transactionTypeCode": null,
+    "money": {
+      "amount": 1.22,
+      "currencyCode": "EUR"
+    }
+  },
+  "transactionTypeCodeInvalid": {
+    "transactionTypeCode": "PEW",
+    "money": {
+      "amount": 1.22,
+      "currencyCode": "EUR"
+    }
+  },
+  "moneyMissing": {
+    "transactionTypeCode": "CARD_PUR"
+  },
+  "moneyEmpty": {
+    "transactionTypeCode": "CARD_PUR",
+    "money": {}
+  },
+  "money_amountMissing": {
+    "transactionTypeCode": "CARD_PUR",
+    "money": {
+      "currencyCode": "EUR"
+    }
+  },
+  "money_amountEmpty": {
+    "transactionTypeCode": "CARD_PUR",
+    "money": {
+      "amount": "",
+      "currencyCode": "EUR"
+    }
+  },
+  "money_amountSpace": {
+    "transactionTypeCode": "CARD_PUR",
+    "money": {
+      "amount": " ",
+      "currencyCode": "EUR"
+    }
+  },
+  "money_amountNull": {
+    "transactionTypeCode": "CARD_PUR",
+    "money": {
+      "amount": null,
+      "currencyCode": "EUR"
+    }
+  },
+  "money_amountNegative": {
+    "transactionTypeCode": "CARD_PUR",
+    "money": {
+      "amount": -1.22,
+      "currencyCode": "EUR"
+    }
+  },
+  "money_amountInvalid": {
+    "transactionTypeCode": "CARD_PUR",
+    "money": {
+      "amount": "5e+",
+      "currencyCode": "EUR"
+    }
+  },
+  "money_amountTooLarge": {
+    "transactionTypeCode": "CARD_PUR",
+    "money": {
+      "amount": 100000000000000000000,
+      "currencyCode": "EUR"
+    }
+  },
+  "money_currencyCodeMissing": {
+    "transactionTypeCode": "CARD_PUR",
+    "money": {
+      "amount": 1.22
+    }
+  },
+  "money_currencyCodeEmpty": {
+    "transactionTypeCode": "CARD_PUR",
+    "money": {
+      "amount": 1.22,
+      "currencyCode": ""
+    }
+  },
+  "money_currencyCodeSpace": {
+    "transactionTypeCode": "CARD_PUR",
+    "money": {
+      "amount": 1.22,
+      "currencyCode": " "
+    }
+  },
+  "money_currencyCodeNull": {
+    "transactionTypeCode": "CARD_PUR",
+    "money": {
+      "amount": 1.22,
+      "currencyCode": null
+    }
+  },
+  "money_currencyCodeInvalid": {
+    "transactionTypeCode": "CARD_PUR",
+    "money": {
+      "amount": 1.22,
+      "currencyCode": "PEW"
+    }
+  }
+}
+
+
