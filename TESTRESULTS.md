@@ -42,12 +42,12 @@ if the required field is not provided in the payload, the program should return 
 
 ## "Create account" endpoint test results
 ### In general:
-![create account tests results](img.png)
+![create account tests results](results_images/img_11.png)
 ### In details:
-![create account tests results list](img_1.png)
-![create account tests results list](img_2.png)
+![create account tests results list](results_images/img_12.png)
+![create account tests results list](results_images/img_13.png)
 ### Explanation to the failed tests:
-![create account tests error list](img_3.png)
+![create account tests error list](results_images/img_14.png)
 #### **Error 1**
 **Error:** account cannot be created when only mandatory fields are filled in
 
@@ -64,7 +64,7 @@ customerGroupCode is not a mandatory field, so the system should not return a va
 
 ## "Get balances" endpoint test results
 ### In general:
-![get balances tests results](img_4.png)
+![get balances tests results](results_images/img_15.png)
 ### In details:
 
 ### Explanation to the failed tests:
@@ -83,12 +83,13 @@ Using not allowed method should end up in 405 status code.
 
 ## "Create transactions" endpoint test results
 ### In general:
-![create transactions tests results](img_5.png)
+![create transactions tests results](results_images/img_16.png)
 ### In details:
-![create transactions tests results list](img_6.png)
-![create transactions tests results list](img_7.png)
+![create transactions tests results list](results_images/img_17.png)
+![create transactions tests results list](results_images/img_18.png)
 ### Explanation to the failed tests:
-![img_8.png](img_8.png)
+![create transactions tests error list](results_images/img_19.png)
+![create transactions tests error list](results_images/img_19.png)
 #### **Error 1**
 **Error:** status code 500 is returned when the payload is missing, while should have been 400 status code
 
