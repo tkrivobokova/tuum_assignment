@@ -96,6 +96,36 @@ describe("Create a new account transaction", () => {
         });
     });
 
+    //status code 404
+    it("should return 404 if URL is wrong", () => {
+        cy.request({
+            method: "POST",
+            url: "https://account-api.sandbox.tuumplatform.com/api/v4/accounts/" + accountId + "/transaction",
+            headers: headers,
+            failOnStatusCode: false,
+            body: validPayload200
+        }).then((response) => {
+            expect(response.status).to.equal(404);
+            expect(response.body).to.have.property("error").that.equal("Not Found");
+            expect(response.body).to.have.property("path").that.equal("/api/v4/accounts/" + accountId + "/transaction");
+        });
+    });
+
+    it("should return 404 if accountId is missing", () => {
+        cy.request({
+            method: "POST",
+            url: "https://account-api.sandbox.tuumplatform.com/api/v4/accounts/transactions",
+            headers: headers,
+            failOnStatusCode: false,
+            body: validPayload200
+        }).then((response) => {
+            expect(response.status).to.equal(404);
+            expect(response.body).to.have.property("error").that.equal("Not Found");
+            expect(response.body).to.have.property("path").that.equal("/api/v4/accounts/transactions");
+        });
+    });
+
+
     // status code 405
     it("should return 405 if PATCH method is used", () => {
         cy.request({
