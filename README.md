@@ -1,4 +1,4 @@
-# Test Assignment for Quality Assurance Engineer (TUUM)
+# Test Assignment for Quality Assurance Engineer (TUUM) by Tatjana Krivobokova
 ## Description
 > Goal of this assignment is to assess QA engineering skills.
 > 
