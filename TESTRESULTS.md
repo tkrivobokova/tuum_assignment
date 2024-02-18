@@ -61,3 +61,23 @@ customerGroupCode is not a mandatory field, so the system should not return a va
 
 #### **Error 2**
 // TODO
+
+
+## "Get balances" endpoint test results
+### In general:
+![get balances tests results](img_4.png)
+### In details:
+
+### Explanation to the failed tests:
+
+#### **Error 1**
+**Error:** when customer request for balance with currencyCode, which is not supported, when status code 200 is returned 
+instead of status code 400
+
+The system has a list of supported currency codes and should not allow a client to request for non-existing currency. It 
+might be and expected behavior due to system's design.
+
+#### **Error 2**
+**Error:** when POST method is used instead of GET the status code 400 is returned instead of 405 status code
+
+Using not allowed method should end up in 405 status code.
