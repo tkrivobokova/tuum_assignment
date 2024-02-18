@@ -1,0 +1,119 @@
+{
+  "validPayload": {
+    "accountTypeCode": "CURRENCY",
+    "personName": "Peter Alexander Schmidt",
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR"
+  },
+  "emptyObject": {},
+  "accountTypeCodeMissing": {
+    "personName": "Peter Alexander Schmidt",
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR"
+  },
+  "accountTypeCodeEmpty": {
+    "accountTypeCode": "",
+    "personName": "Peter Alexander Schmidt",
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR"
+  },
+  "accountTypeCodeSpace": {
+    "accountTypeCode": " ",
+    "personName": "Peter Alexander Schmidt",
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR"
+  },
+  "accountTypeCodeNull": {
+    "accountTypeCode": null,
+    "personName": "Peter Alexander Schmidt",
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR"
+  },
+  "accountTypeCodeInvalid": {
+    "accountTypeCode": "PEW",
+    "personName": "Peter Alexander Schmidt",
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR"
+  },
+  "personNameMissing": {
+    "accountTypeCode": "CURRENCY",
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR"
+  },
+  "personNameEmpty": {
+    "accountTypeCode": "CURRENCY",
+    "personName": "",
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR"
+  },
+  "personNameSpace": {
+    "accountTypeCode": "CURRENCY",
+    "personName": " ",
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR"
+  },
+  "personNameNull": {
+    "accountTypeCode": "CURRENCY",
+    "personName": null,
+    "residencyCountryCode": "DE",
+    "currencyCode": "EUR"
+  },
+  "residencyCountryCodeMissing": {
+    "accountTypeCode": "CURRENCY",
+    "personName": "Peter Alexander Schmidt",
+    "currencyCode": "EUR"
+  },
+  "residencyCountryCodeEmpty": {
+    "accountTypeCode": "CURRENCY",
+    "personName": "Peter Alexander Schmidt",
+    "residencyCountryCode": "",
+    "currencyCode": "EUR"
+  },
+  "residencyCountryCodeSpace": {
+    "accountTypeCode": "CURRENCY",
+    "personName": "Peter Alexander Schmidt",
+    "residencyCountryCode": " ",
+    "currencyCode": "EUR"
+  },
+  "residencyCountryCodeNull": {
+    "accountTypeCode": "CURRENCY",
+    "personName": "Peter Alexander Schmidt",
+    "residencyCountryCode": null,
+    "currencyCode": "EUR"
+  },
+  "residencyCountryCodeInvalid": {
+    "accountTypeCode": "CURRENCY",
+    "personName": "Peter Alexander Schmidt",
+    "residencyCountryCode": "PEW",
+    "currencyCode": "EUR"
+  },
+  "currencyCodeMissing": {
+    "accountTypeCode": "CURRENCY",
+    "personName": "Peter Alexander Schmidt",
+    "residencyCountryCode": "DE"
+  },
+  "currencyCodeEmpty": {
+    "accountTypeCode": "CURRENCY",
+    "personName": "Peter Alexander Schmidt",
+    "residencyCountryCode": "DE",
+    "currencyCode": ""
+  },
+  "currencyCodeSpace": {
+    "accountTypeCode": "CURRENCY",
+    "personName": "Peter Alexander Schmidt",
+    "residencyCountryCode": "DE",
+    "currencyCode": " "
+  },
+  "currencyCodeNull": {
+    "accountTypeCode": "CURRENCY",
+    "personName": "Peter Alexander Schmidt",
+    "residencyCountryCode": "DE",
+    "currencyCode": null
+  },
+  "currencyCodeInvalid": {
+    "accountTypeCode": "CURRENCY",
+    "personName": "Peter Alexander Schmidt",
+    "residencyCountryCode": "DE",
+    "currencyCode": "PEW"
+  }
+}
