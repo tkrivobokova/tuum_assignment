@@ -71,6 +71,42 @@
     "givenName":"Test",
     "surname":"User"
   },
+  "personTypeCodeInvalid": {
+    "personTypeCode":"PEW",
+    "identificationNumber":{
+      "primary":true,
+      "idNumber":"ID-12341234",
+      "idCountryCode":"EE"
+    },
+    "addresses":[
+      {
+        "addressTypeCode":"R",
+        "countryCode":"EE",
+        "cityCounty":"Tallinn",
+        "street1":"Address"
+      }
+    ],
+    "givenName":"Test",
+    "surname":"User"
+  },
+  "personTypeCodeNull": {
+    "personTypeCode": null,
+    "identificationNumber":{
+      "primary":true,
+      "idNumber":"ID-12341234",
+      "idCountryCode":"EE"
+    },
+    "addresses":[
+      {
+        "addressTypeCode":"R",
+        "countryCode":"EE",
+        "cityCounty":"Tallinn",
+        "street1":"Address"
+      }
+    ],
+    "givenName":"Test",
+    "surname":"User"
+  },
   "identificationNumberMissing": {
     "personTypeCode":"P",
     "addresses":[
@@ -151,6 +187,24 @@
     "givenName":"Test",
     "surname":"User"
   },
+  "idNumberNull": {
+    "personTypeCode":"P",
+    "identificationNumber":{
+      "primary":true,
+      "idNumber": null,
+      "idCountryCode":"EE"
+    },
+    "addresses":[
+      {
+        "addressTypeCode":"R",
+        "countryCode":"EE",
+        "cityCounty":"Tallinn",
+        "street1":"Address"
+      }
+    ],
+    "givenName":"Test",
+    "surname":"User"
+  },
   "idCountryCodeMissing": {
     "personTypeCode":"P",
     "identificationNumber":{
@@ -210,6 +264,24 @@
       "primary":true,
       "idNumber":"ID-12341234",
       "idCountryCode":" "
+    },
+    "addresses":[
+      {
+        "addressTypeCode":"R",
+        "countryCode":"EE",
+        "cityCounty":"Tallinn",
+        "street1":"Address"
+      }
+    ],
+    "givenName":"Test",
+    "surname":"User"
+  },
+  "idCountryCodeNull": {
+    "personTypeCode":"P",
+    "identificationNumber":{
+      "primary":true,
+      "idNumber":"ID-12341234",
+      "idCountryCode": null
     },
     "addresses":[
       {
@@ -296,6 +368,42 @@
     "givenName":"Test",
     "surname":"User"
   },
+  "addressTypeCodeInvalid": {
+    "personTypeCode":"P",
+    "identificationNumber":{
+      "primary":true,
+      "idNumber":"ID-12341234",
+      "idCountryCode":"EE"
+    },
+    "addresses":[
+      {
+        "addressTypeCode":"PEW",
+        "countryCode":"EE",
+        "cityCounty":"Tallinn",
+        "street1":"Address"
+      }
+    ],
+    "givenName":"Test",
+    "surname":"User"
+  },
+  "addressTypeCodeNull": {
+    "personTypeCode":"P",
+    "identificationNumber":{
+      "primary":true,
+      "idNumber":"ID-12341234",
+      "idCountryCode":"EE"
+    },
+    "addresses":[
+      {
+        "addressTypeCode": null,
+        "countryCode":"EE",
+        "cityCounty":"Tallinn",
+        "street1":"Address"
+      }
+    ],
+    "givenName":"Test",
+    "surname":"User"
+  },
   "countryCodeMissing": {
     "personTypeCode":"P",
     "identificationNumber":{
@@ -367,6 +475,24 @@
     "givenName":"Test",
     "surname":"User"
   },
+  "countryCodeNull": {
+    "personTypeCode":"P",
+    "identificationNumber":{
+      "primary":true,
+      "idNumber":"ID-12341234",
+      "idCountryCode":"EE"
+    },
+    "addresses":[
+      {
+        "addressTypeCode":"R",
+        "countryCode": null,
+        "cityCounty":"Tallinn",
+        "street1":"Address"
+      }
+    ],
+    "givenName":"Test",
+    "surname":"User"
+  },
   "cityCountryMissing": {
     "personTypeCode":"P",
     "identificationNumber":{
@@ -414,6 +540,24 @@
         "addressTypeCode":"R",
         "countryCode":"EE",
         "cityCounty":" ",
+        "street1":"Address"
+      }
+    ],
+    "givenName":"Test",
+    "surname":"User"
+  },
+  "cityCountryNull": {
+    "personTypeCode":"P",
+    "identificationNumber":{
+      "primary":true,
+      "idNumber":"ID-12341234",
+      "idCountryCode":"EE"
+    },
+    "addresses":[
+      {
+        "addressTypeCode":"R",
+        "countryCode":"EE",
+        "cityCounty": null,
         "street1":"Address"
       }
     ],
@@ -473,6 +617,24 @@
     "givenName":"Test",
     "surname":"User"
   },
+  "street1Null": {
+    "personTypeCode":"P",
+    "identificationNumber":{
+      "primary":true,
+      "idNumber":"ID-12341234",
+      "idCountryCode":"EE"
+    },
+    "addresses":[
+      {
+        "addressTypeCode":"R",
+        "countryCode":"EE",
+        "cityCounty":"Tallinn",
+        "street1":null
+      }
+    ],
+    "givenName":"Test",
+    "surname":"User"
+  },
   "givenNameMissing": {
     "personTypeCode":"P",
     "identificationNumber":{
@@ -524,6 +686,24 @@
       }
     ],
     "givenName":" ",
+    "surname":"User"
+  },
+  "givenNameNull": {
+    "personTypeCode":"P",
+    "identificationNumber":{
+      "primary":true,
+      "idNumber":"ID-12341234",
+      "idCountryCode":"EE"
+    },
+    "addresses":[
+      {
+        "addressTypeCode":"R",
+        "countryCode":"EE",
+        "cityCounty":"Tallinn",
+        "street1":"Address"
+      }
+    ],
+    "givenName": null,
     "surname":"User"
   },
   "surnameMissing": {
@@ -578,5 +758,23 @@
     ],
     "givenName":"Test",
     "surname":" "
+  },
+  "surnameNull": {
+    "personTypeCode":"P",
+    "identificationNumber":{
+      "primary":true,
+      "idNumber":"ID-12341234",
+      "idCountryCode":"EE"
+    },
+    "addresses":[
+      {
+        "addressTypeCode":"R",
+        "countryCode":"EE",
+        "cityCounty":"Tallinn",
+        "street1":"Address"
+      }
+    ],
+    "givenName":"Test",
+    "surname": null
   }
 }

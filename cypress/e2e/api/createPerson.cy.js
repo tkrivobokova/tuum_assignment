@@ -6,36 +6,47 @@ const {
     personTypeCodeMissing,
     personTypeCodeEmpty,
     personTypeCodeSpace,
+    personTypeCodeInvalid,
+    personTypeCodeNull,
     identificationNumberMissing,
     identificationNumberEmpty,
     idNumberMissing,
     idNumberEmpty,
     idNumberSpace,
+    idNumberNull,
     idCountryCodeMissing,
     idCountryCodeEmpty,
     idCountryCodeInvalid,
     idCountryCodeSpace,
+    idCountryCodeNull,
     addressesMissing,
     addressesEmpty,
     addressTypeCodeMissing,
     addressTypeCodeEmpty,
     addressTypeCodeSpace,
+    addressTypeCodeInvalid,
+    addressTypeCodeNull,
     countryCodeMissing,
     countryCodeEmpty,
     countryCodeInvalid,
     countryCodeSpace,
+    countryCodeNull,
     cityCountryMissing,
     cityCountryEmpty,
     cityCountrySpace,
+    cityCountryNull,
     street1Missing,
     street1Empty,
     street1Space,
+    street1Null,
     givenNameMissing,
     givenNameEmpty,
     givenNameSpace,
+    givenNameNull,
     surnameMissing,
     surnameEmpty,
-    surnameSpace
+    surnameSpace,
+    surnameNull
 } = createPerson400status;
 
 const emptyObject400 = emptyObject;
@@ -43,36 +54,47 @@ const personWithIDExists400 = personWithIDExists;
 const personTypeCodeMissing400 = personTypeCodeMissing;
 const personTypeCodeEmpty400 = personTypeCodeEmpty;
 const personTypeCodeSpace400 = personTypeCodeSpace;
+const personTypeCodeInvalid400 = personTypeCodeInvalid;
+const personTypeCodeNull400 = personTypeCodeNull;
 const identificationNumberMissing400 = identificationNumberMissing;
 const identificationNumberEmpty400 = identificationNumberEmpty;
 const idNumberMissing400 = idNumberMissing;
 const idNumberEmpty400 = idNumberEmpty;
 const idNumberSpace400 = idNumberSpace;
+const idNumberNull400 = idNumberNull;
 const idCountryCodeMissing400 = idCountryCodeMissing;
 const idCountryCodeEmpty400 = idCountryCodeEmpty;
 const idCountryCodeInvalid400 = idCountryCodeInvalid;
 const idCountryCodeSpace400 = idCountryCodeSpace;
+const idCountryCodeNull400 = idCountryCodeNull;
 const addressesMissing400 = addressesMissing;
 const addressesEmpty400 = addressesEmpty;
 const addressTypeCodeMissing400 = addressTypeCodeMissing;
 const addressTypeCodeEmpty400 = addressTypeCodeEmpty;
 const addressTypeCodeSpace400 = addressTypeCodeSpace;
+const addressTypeCodeInvalid400 = addressTypeCodeInvalid;
+const addressTypeCodeNull400 = addressTypeCodeNull;
 const countryCodeMissing400 = countryCodeMissing;
 const countryCodeEmpty400 = countryCodeEmpty;
 const countryCodeInvalid400 = countryCodeInvalid;
 const countryCodeSpace400 = countryCodeSpace;
+const countryCodeNull400 = countryCodeNull;
 const cityCountryMissing400 = cityCountryMissing;
 const cityCountryEmpty400 = cityCountryEmpty;
 const cityCountrySpace400 = cityCountrySpace;
+const cityCountryNull400 = cityCountryNull;
 const street1Missing400 = street1Missing;
 const street1Empty400 = street1Empty;
 const street1Space400 = street1Space;
+const street1Null400 = street1Null;
 const givenNameMissing400 = givenNameMissing;
 const givenNameEmpty400 = givenNameEmpty;
 const givenNameSpace400 = givenNameSpace;
+const givenNameNull400 = givenNameNull;
 const surnameMissing400 = surnameMissing;
 const surnameEmpty400 = surnameEmpty;
 const surnameSpace400 = surnameSpace;
+const surnameNull400 = surnameNull;
 
 let jwtToken;
 let headers;
@@ -241,6 +263,36 @@ describe("Create a new private person", function () {
         });
     });
 
+    it("should return 400 if personTypeCode is invalid", () => {
+        cy.request({
+            method: "POST",
+            url: "https://person-api.sandbox.tuumplatform.com/api/v2/persons",
+            headers: headers,
+            failOnStatusCode: false,
+            body: personTypeCodeInvalid400
+        }).then((response) => {
+            expect(response.status).to.equal(400);
+            expect(response.body.errors).to.include("err.personTypeInvalid");
+            expect(response.body).to.have.property("errors");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
+
+    it("should return 400 if personTypeCode is null", () => {
+        cy.request({
+            method: "POST",
+            url: "https://person-api.sandbox.tuumplatform.com/api/v2/persons",
+            headers: headers,
+            failOnStatusCode: false,
+            body: personTypeCodeNull400
+        }).then((response) => {
+            expect(response.status).to.equal(400);
+            expect(response.body.errors).to.include("err.personTypeCodeMissing");
+            expect(response.body).to.have.property("errors");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
+
     it("should return 400 if identificationNumber is missing", () => {
         cy.request({
             method: "POST",
@@ -315,6 +367,21 @@ describe("Create a new private person", function () {
         });
     });
 
+    it("should return 400 if idNumber is null", () => {
+        cy.request({
+            method: "POST",
+            url: "https://person-api.sandbox.tuumplatform.com/api/v2/persons",
+            headers: headers,
+            failOnStatusCode: false,
+            body: idNumberNull400
+        }).then((response) => {
+            expect(response.status).to.equal(400);
+            expect(response.body.errors).to.include("err.idNumberMissing");
+            expect(response.body).to.have.property("errors");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
+
     it("should return 400 if idCountryCode is missing", () => {
         cy.request({
             method: "POST",
@@ -367,6 +434,21 @@ describe("Create a new private person", function () {
             headers: headers,
             failOnStatusCode: false,
             body: idCountryCodeSpace400
+        }).then((response) => {
+            expect(response.status).to.equal(400);
+            expect(response.body.errors).to.include("err.idNumberCountryMissing");
+            expect(response.body).to.have.property("errors");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
+
+    it("should return 400 if idCountryCode is null", () => {
+        cy.request({
+            method: "POST",
+            url: "https://person-api.sandbox.tuumplatform.com/api/v2/persons",
+            headers: headers,
+            failOnStatusCode: false,
+            body: idCountryCodeNull400
         }).then((response) => {
             expect(response.status).to.equal(400);
             expect(response.body.errors).to.include("err.idNumberCountryMissing");
@@ -449,6 +531,36 @@ describe("Create a new private person", function () {
         });
     });
 
+    it("should return 400 if addressTypeCode is invalid", () => {
+        cy.request({
+            method: "POST",
+            url: "https://person-api.sandbox.tuumplatform.com/api/v2/persons",
+            headers: headers,
+            failOnStatusCode: false,
+            body: addressTypeCodeInvalid400
+        }).then((response) => {
+            expect(response.status).to.equal(400);
+            expect(response.body.errors).to.include("err.addressRegistrationAtLeastOneRequired");
+            expect(response.body).to.have.property("errors");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
+
+    it("should return 400 if addressTypeCode is null", () => {
+        cy.request({
+            method: "POST",
+            url: "https://person-api.sandbox.tuumplatform.com/api/v2/persons",
+            headers: headers,
+            failOnStatusCode: false,
+            body: addressTypeCodeNull400
+        }).then((response) => {
+            expect(response.status).to.equal(400);
+            expect(response.body.errors).to.include("err.addressRegistrationAtLeastOneRequired");
+            expect(response.body).to.have.property("errors");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
+
     it("should return 400 if countryCode is missing", () => {
         cy.request({
             method: "POST",
@@ -509,6 +621,21 @@ describe("Create a new private person", function () {
         });
     });
 
+    it("should return 400 if countryCode is null", () => {
+        cy.request({
+            method: "POST",
+            url: "https://person-api.sandbox.tuumplatform.com/api/v2/persons",
+            headers: headers,
+            failOnStatusCode: false,
+            body: countryCodeNull400
+        }).then((response) => {
+            expect(response.status).to.equal(400);
+            expect(response.body.errors).to.include("err.addressCountryMissing");
+            expect(response.body).to.have.property("errors");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
+
     it("should return 400 if cityCountry is missing", () => {
         cy.request({
             method: "POST",
@@ -546,6 +673,21 @@ describe("Create a new private person", function () {
             headers: headers,
             failOnStatusCode: false,
             body: cityCountrySpace400
+        }).then((response) => {
+            expect(response.status).to.equal(400);
+            expect(response.body.errors).to.include("err.addressCityCountyMissing");
+            expect(response.body).to.have.property("errors");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
+
+    it("should return 400 if cityCountry is null", () => {
+        cy.request({
+            method: "POST",
+            url: "https://person-api.sandbox.tuumplatform.com/api/v2/persons",
+            headers: headers,
+            failOnStatusCode: false,
+            body: cityCountryNull400
         }).then((response) => {
             expect(response.status).to.equal(400);
             expect(response.body.errors).to.include("err.addressCityCountyMissing");
@@ -599,6 +741,21 @@ describe("Create a new private person", function () {
         });
     });
 
+    it("should return 400 if street1 is null", () => {
+        cy.request({
+            method: "POST",
+            url: "https://person-api.sandbox.tuumplatform.com/api/v2/persons",
+            headers: headers,
+            failOnStatusCode: false,
+            body: street1Null400
+        }).then((response) => {
+            expect(response.status).to.equal(400);
+            expect(response.body.errors).to.include("err.addressStreet1Missing");
+            expect(response.body).to.have.property("errors");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
+
     it("should return 400 if givenName is missing", () => {
         cy.request({
             method: "POST",
@@ -636,6 +793,21 @@ describe("Create a new private person", function () {
             headers: headers,
             failOnStatusCode: false,
             body: givenNameSpace400
+        }).then((response) => {
+            expect(response.status).to.equal(400);
+            expect(response.body.errors).to.include("err.personGivenNameMissing");
+            expect(response.body).to.have.property("errors");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
+
+    it("should return 400 if givenName is null", () => {
+        cy.request({
+            method: "POST",
+            url: "https://person-api.sandbox.tuumplatform.com/api/v2/persons",
+            headers: headers,
+            failOnStatusCode: false,
+            body: givenNameNull400
         }).then((response) => {
             expect(response.status).to.equal(400);
             expect(response.body.errors).to.include("err.personGivenNameMissing");
@@ -689,6 +861,21 @@ describe("Create a new private person", function () {
         });
     });
 
+    it("should return 400 if surname is null", () => {
+        cy.request({
+            method: "POST",
+            url: "https://person-api.sandbox.tuumplatform.com/api/v2/persons",
+            headers: headers,
+            failOnStatusCode: false,
+            body: surnameNull400
+        }).then((response) => {
+            expect(response.status).to.equal(400);
+            expect(response.body.errors).to.include("err.personSurnameMissing");
+            expect(response.body).to.have.property("errors");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
+
     // status code 401
     it("should return 401 if user is not logged in", () => {
         cy.request({
@@ -731,7 +918,7 @@ describe("Create a new private person", function () {
             body: personWithIDExists400
         }).then((response) => {
             expect(response.status).to.equal(405);
-            expect(response.body).to.have.property("errors");
+            expect(response.body).to.have.property("errors").to.include("err.httpMethodNotAllowed");
             expect(response.body).to.have.property("validationErrors");
         });
     });
@@ -744,7 +931,7 @@ describe("Create a new private person", function () {
             failOnStatusCode: false
         }).then((response) => {
             expect(response.status).to.equal(405);
-            expect(response.body).to.have.property("errors");
+            expect(response.body).to.have.property("errors").to.include("err.httpMethodNotAllowed");
             expect(response.body).to.have.property("validationErrors");
         });
     });
@@ -758,7 +945,7 @@ describe("Create a new private person", function () {
             body: personWithIDExists400
         }).then((response) => {
             expect(response.status).to.equal(405);
-            expect(response.body).to.have.property("errors");
+            expect(response.body).to.have.property("errors").to.include("err.httpMethodNotAllowed");
             expect(response.body).to.have.property("validationErrors");
         });
     });
@@ -772,7 +959,7 @@ describe("Create a new private person", function () {
             body: personWithIDExists400
         }).then((response) => {
             expect(response.status).to.equal(405);
-            expect(response.body).to.have.property("errors");
+            expect(response.body).to.have.property("errors").to.include("err.httpMethodNotAllowed");
             expect(response.body).to.have.property("validationErrors");
         });
     });
