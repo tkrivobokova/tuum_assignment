@@ -918,7 +918,7 @@ describe("Create a new private person", function () {
             body: personWithIDExists400
         }).then((response) => {
             expect(response.status).to.equal(405);
-            expect(response.body).to.have.property("errors");
+            expect(response.body).to.have.property("errors").to.include("err.httpMethodNotAllowed");
             expect(response.body).to.have.property("validationErrors");
         });
     });
@@ -931,7 +931,7 @@ describe("Create a new private person", function () {
             failOnStatusCode: false
         }).then((response) => {
             expect(response.status).to.equal(405);
-            expect(response.body).to.have.property("errors");
+            expect(response.body).to.have.property("errors").to.include("err.httpMethodNotAllowed");
             expect(response.body).to.have.property("validationErrors");
         });
     });
@@ -945,7 +945,7 @@ describe("Create a new private person", function () {
             body: personWithIDExists400
         }).then((response) => {
             expect(response.status).to.equal(405);
-            expect(response.body).to.have.property("errors");
+            expect(response.body).to.have.property("errors").to.include("err.httpMethodNotAllowed");
             expect(response.body).to.have.property("validationErrors");
         });
     });
@@ -959,7 +959,7 @@ describe("Create a new private person", function () {
             body: personWithIDExists400
         }).then((response) => {
             expect(response.status).to.equal(405);
-            expect(response.body).to.have.property("errors");
+            expect(response.body).to.have.property("errors").to.include("err.httpMethodNotAllowed");
             expect(response.body).to.have.property("validationErrors");
         });
     });
