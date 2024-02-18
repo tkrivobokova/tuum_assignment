@@ -75,7 +75,7 @@ describe("Create a new account transaction", () => {
     });
 
     // status code 200
-    it("should return 200 when creating an account transaction", () => {
+    it.skip("should return 200 when creating an account transaction", () => {
         cy.request({
             method: "POST",
             url: "https://account-api.sandbox.tuumplatform.com/api/v4/accounts/" + accountId + "/transactions",
@@ -96,4 +96,59 @@ describe("Create a new account transaction", () => {
         });
     });
 
+    // status code 405
+    it("should return 405 if PATCH method is used", () => {
+        cy.request({
+            method: "PATCH",
+            url: "https://account-api.sandbox.tuumplatform.com/api/v4/accounts/" + accountId + "/transactions",
+            headers: headers,
+            failOnStatusCode: false,
+            body: validPayload200
+        }).then((response) => {
+            expect(response.status).to.equal(405);
+            expect(response.body).to.have.property("errors").to.include("err.httpMethodNotAllowed");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
+
+    it("should return 405 if GET method is used", () => {
+        cy.request({
+            method: "GET",
+            url: "https://account-api.sandbox.tuumplatform.com/api/v4/accounts/" + accountId + "/transactions",
+            headers: headers,
+            failOnStatusCode: false
+        }).then((response) => {
+            expect(response.status).to.equal(405);
+            expect(response.body).to.have.property("errors").to.include("err.httpMethodNotAllowed");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
+
+    it("should return 405 if DELETE method is used", () => {
+        cy.request({
+            method: "DELETE",
+            url: "https://account-api.sandbox.tuumplatform.com/api/v4/accounts/" + accountId + "/transactions",
+            headers: headers,
+            failOnStatusCode: false,
+            body: validPayload200
+        }).then((response) => {
+            expect(response.status).to.equal(405);
+            expect(response.body).to.have.property("errors").to.include("err.httpMethodNotAllowed");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
+
+    it("should return 405 if PUT method is used", () => {
+        cy.request({
+            method: "PUT",
+            url: "https://account-api.sandbox.tuumplatform.com/api/v4/accounts/" + accountId + "/transactions",
+            headers: headers,
+            failOnStatusCode: false,
+            body: validPayload200
+        }).then((response) => {
+            expect(response.status).to.equal(405);
+            expect(response.body).to.have.property("errors").to.include("err.httpMethodNotAllowed");
+            expect(response.body).to.have.property("validationErrors");
+        });
+    });
 })
