@@ -60,15 +60,19 @@ According to endpoint documentation required fields are:
 customerGroupCode is not a mandatory field, so the system should not return a validation error
 
 #### **Error 2**
-// TODO
+**Error:** when sending request with currencyCode, which is not supported, when status code 400 but the validation error
+for currencyCode invalidity is not present
+
+The system has a list of supported currency codes and should not allow a client to send non-existing currency. It
+might be and expected behavior due to system's design.
 
 ## "Get balances" endpoint test results
 ### In general:
 ![get balances tests results](results_images/img_15.png)
 ### In details:
-
+![get balances tests results list](results_images/img_20.png)
 ### Explanation to the failed tests:
-
+![get balances tests error list](results_images/img_21.png)
 #### **Error 1**
 **Error:** when customer request for balance with currencyCode, which is not supported, when status code 200 is returned 
 instead of status code 400
