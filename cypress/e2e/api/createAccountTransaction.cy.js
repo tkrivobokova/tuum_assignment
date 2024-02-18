@@ -96,6 +96,22 @@ describe("Create a new account transaction", () => {
         });
     });
 
+    // status code 401
+    it("should return 401 if user is not logged in", () => {
+        cy.request({
+            method: "POST",
+            url: "https://account-api.sandbox.tuumplatform.com/api/v4/accounts/" + accountId + "/transactions",
+            headers: {
+                "x-channel-code": "SYSTEM",
+                "x-tenant-code": "MB"
+            },
+            failOnStatusCode: false,
+            body: validPayload200
+        }).then((response) => {
+            expect(response.status).to.equal(401);
+        });
+    });
+
     //status code 404
     it("should return 404 if URL is wrong", () => {
         cy.request({
@@ -124,7 +140,6 @@ describe("Create a new account transaction", () => {
             expect(response.body).to.have.property("path").that.equal("/api/v4/accounts/transactions");
         });
     });
-
 
     // status code 405
     it("should return 405 if PATCH method is used", () => {
